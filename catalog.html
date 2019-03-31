@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -27,24 +28,30 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="title-block">
-      <h2 class="title-block__title">Каталог товаров</h2>
+    <div class="intro">
+      <h2 class="intro__title">Каталог товаров</h2>
     </div>
     <section class="catalog">
       <ul class="catalog__list">
         <li class="catalog__item">
+          <img src="./img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" height="195" width="260"
+            class="catalog__item-photo">
           <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
           <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
           <span class="catalog__item-price">1 200 руб.</span>
           <button class="catalog__button buy-button">Купить</button>
         </li>
         <li class="catalog__item">
+          <img src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" height="195" width="260"
+            class="catalog__item-photo">
           <h3 class="catalog__item-title">Корзинка для белья</h3>
           <p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
           <span class="catalog__item-price">690 руб.</span>
           <button class="catalog__button buy-button">Купить</button>
         </li>
         <li class="catalog__item">
+          <img src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" height="195" width="260"
+            class="catalog__item-photo">
           <h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
           <p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
           <span class="catalog__item-price">1 500 руб.</span>
@@ -54,7 +61,8 @@
     </section>
     <section class="production">
       <h2 class="production__title">Процесс производства</h2>
-      <div class="production__video">Видео о том, как мы производим наши товары</div>
+      <div class="production__video"><span class="visually-hidden">Видео о том, как мы производим наши товары</span>
+      </div>
       <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
       <button class="production__button button">Сделать заказ</button>
