@@ -1,0 +1,28 @@
+.order-form__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.order-form__legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $cyan;
+  text-transform: uppercase;
+}
+
+.order-form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__text-input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $light-gray;
+}
+
+.order-form__button {
+  line-height: 16px;
+}

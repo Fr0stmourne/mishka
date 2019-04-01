@@ -12,18 +12,19 @@
 <body>
   <header class="page-header">
     <nav class="page-header__nav nav">
-      <div class="nav__logo"><img src="#" alt="Логотип компании 'Мишка'">
+      <div class="nav__logo">
+        <img src="./img/logo-mobile.svg" alt="Логотип компании 'Мишка'" />
         <h1 class="visually-hidden nav__title">Mishka</h1>
       </div>
       <ul class="nav__menu menu">
-        <li class="menu__item"><a href="#">Каталог товаров</a></li>
-        <li class="menu__item"><a href="#">Вязание на заказ</a></li>
+        <li class="menu__item"><a class="nav__link" href="#">Каталог товаров</a></li>
+        <li class="menu__item"><a class="nav__link" href="#">Вязание на заказ</a></li>
       </ul>
       <div class="nav__search search">
-        <a href="#" class="search__link">Поиск по сайту</a>
+        <a href="#" class="nav__link search__link">Поиск по сайту</a>
       </div>
       <ul class="nav__user-nav user-nav">
-        <li class="user-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        <li class="user-nav__item"><a class="nav__link" href="#">Корзина: пока пуста</a></li>
       </ul>
     </nav>
   </header>
@@ -38,32 +39,32 @@
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Тип</legend>
         <input type="radio" name="type" class="order-form__radio" id="for-interior" value="for-interior">
-        <label for="for-interior">Аксессуар для интерьера</label>
+        <label class="order-form__label" for="for-interior">Аксессуар для интерьера</label>
         <input type="radio" name="type" class="order-form__radio" id="toy" value="toy">
-        <label for="toy">Детская игрушка</label>
+        <label class="order-form__label" for="toy">Детская игрушка</label>
       </fieldset>
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">Цвет</legend>
         <input type="checkbox" class="order-form__checkbox" id="white" name="color[]" value="white">
-        <label for="white">Белый</label>
+        <label class="order-form__label" for="white">Белый</label>
         <input type="checkbox" class="order-form__checkbox" id="gray" name="color[]" value="gray">
-        <label for="gray">Серый</label>
+        <label class="order-form__label" for="gray">Серый</label>
         <input type="checkbox" class="order-form__checkbox" id="tiffany" name="color[]" value="tiffany">
-        <label for="tiffany">&laquo;Тиффани&raquo;</label>
+        <label class="order-form__label" for="tiffany">&laquo;Тиффани&raquo;</label>
         <input type="checkbox" class="order-form__checkbox" id="black" name="color[]" value="black">
-        <label for="black">Черный</label>
+        <label class="order-form__label" for="black">Черный</label>
         <input type="checkbox" class="order-form__checkbox" id="pink" name="color[]" value="pink">
-        <label for="pink">Розовый</label>
+        <label class="order-form__label" for="pink">Розовый</label>
         <input type="checkbox" class="order-form__checkbox" id="orange" name="color[]" value="orange">
-        <label for="orange">Оранжевый</label>
+        <label class="order-form__label" for="orange">Оранжевый</label>
       </fieldset>
       <fieldset class="order-form__fieldset">
         <legend class="order-form__legend">ФИО</legend>
-        <label for="name">Имя:</label>
-        <input type="text" class="order-form__text-input" id="name" placeholder="Введите ваше имя*">
-        <label for="surname">Фамилия:</label>
-        <input type="text" class="order-form__text-input" id="surname" placeholder="Укажите фамилию*">
-        <label for="patronymic">Отчество:</label>
+        <label class="order-form__label" for="name">Имя:</label><br>
+        <input type="text" class="order-form__text-input" id="name" placeholder="Введите ваше имя*"><br>
+        <label class="order-form__label" for="surname">Фамилия:</label><br>
+        <input type="text" class="order-form__text-input" id="surname" placeholder="Укажите фамилию*"><br>
+        <label class="order-form__label" for="patronymic">Отчество:</label><br>
         <input type="text" class="order-form__text-input" id="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
       <fieldset class="order-form__fieldset">
