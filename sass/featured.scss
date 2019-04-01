@@ -1,7 +1,13 @@
+.featured {
+  margin: 32px 0;
+  outline: 1px solid gray;
+}
+
 .featured__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
 }
 
 .featured__item-type {
@@ -12,7 +18,7 @@
   line-height: 20px;
 }
 
-.feature__description {
+.featured__description {
   font-size: 15px;
   line-height: 24px;
 }

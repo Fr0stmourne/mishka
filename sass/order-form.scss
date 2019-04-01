@@ -1,6 +1,18 @@
+.order-form {
+  outline: 1px solid gray;
+  margin: 30px 0 0;
+  margin-bottom: 56px;
+}
+
 .order-form__description {
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.order-form__fieldset {
+  padding: 22px 0 0;
 }
 
 .order-form__legend {
@@ -21,6 +33,11 @@
   font-size: 17px;
   line-height: 18px;
   color: $light-gray;
+}
+
+.order-form__disclaimer {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .order-form__button {

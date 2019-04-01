@@ -1,7 +1,14 @@
+.contacts {
+  padding: 42px 0 0;
+  margin-bottom: 42px;
+  outline: 1px solid gray;
+}
+
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 }
 
 .contacts__contact {

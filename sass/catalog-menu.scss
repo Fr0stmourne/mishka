@@ -6,6 +6,15 @@
   text-decoration: none;
 }
 
+.catalog-menu__list {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-menu__item {
+  padding: 30px 30px;
+}
+
 .catalog-menu__item--interior {
   background-color: #63d1bb;
 }
