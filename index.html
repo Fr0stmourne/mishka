@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="page-header__nav nav">
+  <header class="page-header wrapper">
+    <nav class="page-header__nav nav container">
       <div class="nav__logo">
         <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип компании 'Мишка'" />
         <h1 class="visually-hidden nav__title">Mishka</h1>
@@ -20,18 +20,20 @@
         <li class="menu__item"><a class="nav__link" href="#">Каталог товаров</a></li>
         <li class="menu__item"><a class="nav__link" href="#">Вязание на заказ</a></li>
       </ul>
+      <div class="nav__delivery">Бесплатная доставка по России</div>
       <div class="nav__search search">
-        <a href="#" class="nav__link search__link">Поиск по сайту</a>
+        <a href="#" class="nav__link search__link"><span class="search__link-text">Поиск по сайту</span></a>
       </div>
       <ul class="nav__user-nav user-nav">
         <li class="user-nav__item"><a class="nav__link" href="#">Корзина: пока пуста</a></li>
       </ul>
     </nav>
-  </header>
-  <main class="page-main">
     <div class="intro intro--img">
       <h2 class="intro__title">Милые штуки ручной работы для дома</h2>
     </div>
+  </header>
+  <main class="page-main wrapper">
+
     <section class="catalog-menu">
       <h2 class="catalog-menu__title visually-hidden">Ассортимент товаров</h2>
       <ul class="catalog-menu__list">
@@ -136,13 +138,11 @@
     </div>
     <section class="map">
       <h2 class="map__title visually-hidden">Где мы находимся</h2>
-      <img src="./img/map-mobile@1x.jpg" alt="Мы находимся по адресу г. Санкт-Петербург,
-      ул. Большая Конюшенная,
-      д. 19/8, офис 101" class="map__map-photo" />
+      <div class="map__map-photo"></div>
       <button class="map__button button">Напишите нам</button>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer wrapper">
     <ul class="page-footer__social social">
       <li class="social__item">
         <a href="#" class="social__link social-link--instagram">Инстаграм</a>
