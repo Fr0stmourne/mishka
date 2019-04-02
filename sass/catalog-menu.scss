@@ -28,4 +28,26 @@
   .catalog-menu {
     margin-top: -135px;
   }
+
+  .catalog-menu__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .catalog-menu__item {
+    box-sizing: border-box;
+    width: 334px;
+  }
+
+  .catalog-menu__link {
+    display: block;
+    padding: 10px 50px;
+    width: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-menu__item {
+    width: 525px;
+  }
 }

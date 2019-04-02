@@ -12,13 +12,28 @@
 }
 
 .about-us__advantages {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .about-us__item {
+  width: 260px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__advantages {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 668px;
+  }
+
+  .about-us__item {
+    width: 330px;
+  }
 }

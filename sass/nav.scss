@@ -26,12 +26,12 @@
   .nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .nav__menu {
     width: 335px;
     display: flex;
-    flex-grow: 1;
     order: 1;
   }
 

@@ -10,6 +10,16 @@
   margin: 0;
 }
 
+.featured__item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__order-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .featured__item-type {
   text-transform: uppercase;
   color: $cyan;
@@ -37,4 +47,36 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .featured {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .featured__feature {
+    width: 165px;
+    margin: 0;
+  }
+
+  .featured__title {
+    display: inline-block;
+    width: 500px;
+  }
+
+  .featured__item-info {
+    width: 330px;
+  }
+
+  .featured__photo {
+    display: inline-block;
+    order: 1;
+    width: 334px;
+    height: auto;
+  }
+
+  .featured__order-info {
+    width: 200px;
+  }
 }

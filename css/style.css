@@ -359,6 +359,13 @@ body {
   .nav__user-nav {
     width: 300px; } }
 
+@media (min-width: 1250px) {
+  .wrapper {
+    width: 1250px; }
+  .container {
+    width: 1050px;
+    padding: 0 100px; } }
+
 .about-us {
   padding: 32px 0 0;
   margin-bottom: 32px;
@@ -371,14 +378,34 @@ body {
   margin: 0; }
 
 .about-us__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0; }
 
 .about-us__item {
+  width: 260px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px; }
+
+@media (min-width: 768px) {
+  .about-us__advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 668px; }
+  .about-us__item {
+    width: 330px; } }
 
 .button {
   text-transform: uppercase;
@@ -409,7 +436,26 @@ body {
 
 @media (min-width: 768px) {
   .catalog-menu {
-    margin-top: -135px; } }
+    margin-top: -135px; }
+  .catalog-menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .catalog-menu__item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 334px; }
+  .catalog-menu__link {
+    display: block;
+    padding: 10px 50px;
+    width: 140px; } }
+
+@media (min-width: 1250px) {
+  .catalog-menu__item {
+    width: 525px; } }
 
 .catalog {
   margin: 30px 0;
@@ -468,6 +514,24 @@ body {
   line-height: 30px;
   margin: 0; }
 
+.featured__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.featured__order-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .featured__item-type {
   text-transform: uppercase;
   color: #63d1bb;
@@ -491,6 +555,32 @@ body {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px; }
+
+@media (min-width: 768px) {
+  .featured {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .featured__feature {
+    width: 165px;
+    margin: 0; }
+  .featured__title {
+    display: inline-block;
+    width: 500px; }
+  .featured__item-info {
+    width: 330px; }
+  .featured__photo {
+    display: inline-block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 334px;
+    height: auto; }
+  .featured__order-info {
+    width: 200px; } }
 
 .intro {
   background-color: #f1f1f1; }
@@ -519,6 +609,10 @@ body {
   .intro--img {
     background-image: url(../img/hero-tablet@1x.jpg); } }
 
+@media (min-width: 1250px) {
+  .intro--img {
+    background-image: url(../img/hero-desktop@1x.jpg); } }
+
 .map {
   margin-bottom: 42px;
   width: 320px; }
@@ -536,10 +630,23 @@ body {
     height: 460px;
     background-image: url(../img/map-tablet@1x.jpg); } }
 
+@media (min-width: 1250px) {
+  .map {
+    width: 1250px; }
+  .map__map-photo {
+    width: 1250px;
+    height: 460px;
+    background-image: url(../img/map-desktop@1x.jpg); } }
+
 .menu {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+.menu__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .nav__link {
   text-align: center;
@@ -565,15 +672,15 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .nav__menu {
     width: 335px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }

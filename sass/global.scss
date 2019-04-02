@@ -29,9 +29,9 @@ body {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .wrapper {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .container {
@@ -50,5 +50,16 @@ body {
 
   .nav__user-nav {
     width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: $desktop-width;
+  }
+
+  .container {
+    width: 1050px;
+    padding: 0 100px;
   }
 }
