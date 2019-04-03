@@ -1,4 +1,7 @@
 .production {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 28px 0 52px;
   outline: 1px solid gray;
 }
@@ -22,4 +25,31 @@
 
 .production__button {
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .production__video {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production__video {
+    position: absolute;
+  }
+
+  .production__title {
+    padding-left: 700px;
+    width: 350px;
+  }
+
+  .production__description {
+    width: 350px;
+    padding-left: 700px;
+  }
+
+  .production__button {
+    width: 300px;
+    margin-left: 700px;
+  }
 }

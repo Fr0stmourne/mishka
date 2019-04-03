@@ -20,6 +20,13 @@
   display: none;
 }
 
+.nav__options-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
 
 
 @media (min-width: $tablet-width) {
@@ -50,23 +57,13 @@
   }
 }
 
-//   .nav__logo {
-//     width: 300px;
-//   }
+@media (min-width: $desktop-width) {
+  .nav__menu {
+    order: -1;
+  }
 
-//   .nav__user-nav {
-//     width: 300px;
-//     width: 320px;
-//     margin: 0 auto;
-//   }
-
-
-
-//   .nav__delivery {
-//     display: block;
-//     flex-grow: 1;
-//     background-color: $bg-gray;
-//     order: 1;
-//     width: 245px;
-//   }
-// }
+  .nav__options-menu {
+    display: flex;
+    order: 1;
+  }
+}
