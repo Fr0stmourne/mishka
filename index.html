@@ -95,6 +95,7 @@
             </div>
           </div>
         </section>
+
         <section class="about-us">
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__advantages">
@@ -157,42 +158,48 @@
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts__table">
-            <tr>
-              <td class="contacts__contact">e-mail:</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__contact">адрес:</td>
-              <td class="contacts__value">
-                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-              </td>
-            </tr>
+            <tbody class="contacts__table-body">
+              <tr>
+                <td class="contacts__contact">e-mail:</td>
+                <td class="contacts__value">info@mimimishkashop.ru</td>
+              </tr>
+              <tr>
+                <td class="contacts__contact">адрес:</td>
+                <td class="contacts__value">
+                  г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+                </td>
+              </tr>
+            </tbody>
           </table>
+
+          <img src="./img/map-mobile@1x.jpg" alt="" class="contacts__map" />
+
+          <button class="contacts__button button">Напишите нам</button>
         </section>
       </div>
-      <section class="map">
-        <h2 class="map__title visually-hidden">Где мы находимся</h2>
-        <div class="map__map-photo"></div>
-        <button class="map__button button">Напишите нам</button>
-      </section>
     </main>
     <footer class="page-footer wrapper">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a href="#" class="social__link social-link--instagram">Инстаграм</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social-link--facebook">Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social-link--twitter">Твиттер</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a href="#" class="copyright__link"
-          ><span class="visually-hidden">HTML Academy</span></a
-        >
+      <div class="container page-footer__wrapper">
+        <img src="./img/logo-footer.svg" alt="" class="page-footer__logo" />
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social-link--instagram"
+              >Инстаграм</a
+            >
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social-link--facebook">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social-link--twitter">Твиттер</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a href="#" class="copyright__link"
+            ><span class="visually-hidden">HTML Academy</span></a
+          >
+        </div>
       </div>
     </footer>
 

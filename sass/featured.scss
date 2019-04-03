@@ -51,6 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .featured {
+
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -66,17 +67,36 @@
   }
 
   .featured__item-info {
-    width: 330px;
+    position: relative;
+    box-sizing: border-box;
+    width: 668px;
+    padding-right: 334px;
+    min-height: 410px;
   }
 
   .featured__photo {
-    display: inline-block;
-    order: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 334px;
     height: auto;
   }
 
   .featured__order-info {
     width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured {
+    position: relative;
+    padding-left: 175px;
+    padding-top: 130px;
+  }
+
+  .featured__item-type {
+    position: absolute;
+    left: 0;
+    top: 130px;
   }
 }

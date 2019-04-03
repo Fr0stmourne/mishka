@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   padding: 42px 0 0;
   margin-bottom: 42px;
   outline: 1px solid gray;
@@ -19,4 +20,24 @@
 .contacts__value {
   font-size: 15px;
   line-height: 30px;
+}
+
+.contacts__map {
+  margin-bottom: 42px;
+  width: 260px;
+  transform: scale(1.23);
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__table-body {
+    display: flex;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__table-body {
+    width: 350px;
+    flex-direction: column;
+  }
 }

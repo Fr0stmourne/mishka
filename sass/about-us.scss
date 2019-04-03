@@ -37,3 +37,18 @@
     width: 330px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 700px;
+    padding: 0 175px;
+  }
+
+  .about-us__advantages {
+    width: 700px;
+  }
+
+  .about-us__item {
+    width: 350px;
+  }
+}
