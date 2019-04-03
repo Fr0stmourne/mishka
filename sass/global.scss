@@ -6,12 +6,13 @@ body {
 .container {
   padding: 0 30px;
   width: 260px;
-}
-
-.wrapper {
-  width: 320px;
   margin: 0 auto;
 }
+
+// .wrapper {
+//   width: 320px;
+//   margin: 0 auto;
+// }
 
 .visually-hidden {
   border: 0;
@@ -30,14 +31,13 @@ body {
 
 
 @media (min-width: $tablet-width) {
-  .wrapper {
-    width: $tablet-width;
-  }
+  // .wrapper {
+  //   width: $tablet-width;
+  // }
 
   .container {
     width: 668px;
     padding: 0 50px;
-    margin: 0 auto;
   }
 
   .nav {
@@ -54,9 +54,9 @@ body {
 }
 
 @media (min-width: $desktop-width) {
-  .wrapper {
-    width: $desktop-width;
-  }
+  // .wrapper {
+  //   width: $desktop-width;
+  // }
 
   .container {
     width: 1050px;
