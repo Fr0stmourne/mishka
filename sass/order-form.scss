@@ -1,8 +1,18 @@
 .order-form {
   outline: 1px solid gray;
-  margin: 30px 0 0;
-  margin-bottom: 56px;
+  padding: 30px 0 56px;
 }
+
+.order-form__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 30px 30px 0;
+}
+
+.order-form__wrapper--gray {
+  background-color: transparent;
+}
+
 
 .order-form__description {
   font-size: 13px;
@@ -11,8 +21,11 @@
   margin-bottom: 25px;
 }
 
+
+
 .order-form__fieldset {
   padding: 22px 0 0;
+  margin: 0;
 }
 
 .order-form__legend {
@@ -35,6 +48,31 @@
   color: $light-gray;
 }
 
+.order-form__text-input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.order-form__phone-input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.order-form__email-input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.order-form__add-info {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.order-form__field--name {
+  flex-direction: column;
+  display: flex;
+}
+
 .order-form__disclaimer {
   font-size: 14px;
   line-height: 16px;
@@ -42,4 +80,40 @@
 
 .order-form__button {
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__fieldset {
+    position: relative;
+    padding-left: 167px;
+  }
+
+  .order-form__legend {
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+
+  .order-form__wrapper {
+    box-sizing: border-box;
+    width: 768px;
+    padding: 50px 50px;
+  }
+
+  .order-form__wrapper--gray {
+    background-color: $gray;
+  }
+
+  .order-form__fieldset--color {
+
+    .order-form__fieldset-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .order-form__field {
+      width: 248px;
+    }
+  }
 }

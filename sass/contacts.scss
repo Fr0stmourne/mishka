@@ -36,6 +36,17 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .contacts {
+    padding-left: 175px;
+  }
+
+  .contacts__map {
+    position: relative;
+    left: 500px;
+  }
+
+
   .contacts__table-body {
     width: 350px;
     flex-direction: column;

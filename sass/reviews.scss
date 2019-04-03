@@ -42,3 +42,11 @@
 .reviews__button {
   font-size: 18px;
 }
+
+@media (min-width: $tablet-width) {}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-left: 175px;
+  }
+}

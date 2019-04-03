@@ -522,6 +522,11 @@ body {
     display: flex; } }
 
 @media (min-width: 1250px) {
+  .contacts {
+    padding-left: 175px; }
+  .contacts__map {
+    position: relative;
+    left: 500px; }
   .contacts__table-body {
     width: 350px;
     -webkit-box-orient: vertical;
@@ -636,7 +641,7 @@ body {
   background-repeat: no-repeat; }
 
 .intro__title {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   margin: 0;
   font-weight: 700;
   font-size: 27px;
@@ -647,10 +652,10 @@ body {
 @media (min-width: 768px) {
   .intro {
     margin-top: -78px;
-    min-height: 630px;
     padding: 155px 30px 0;
     text-align: center; }
   .intro--img {
+    min-height: 630px;
     background-image: url(../img/hero-tablet@1x.jpg); } }
 
 @media (min-width: 1250px) {
@@ -716,8 +721,16 @@ body {
 
 .order-form {
   outline: 1px solid gray;
-  margin: 30px 0 0;
-  margin-bottom: 56px; }
+  padding: 30px 0 56px; }
+
+.order-form__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 320px;
+  padding: 30px 30px 0; }
+
+.order-form__wrapper--gray {
+  background-color: transparent; }
 
 .order-form__description {
   font-size: 13px;
@@ -726,7 +739,8 @@ body {
   margin-bottom: 25px; }
 
 .order-form__fieldset {
-  padding: 22px 0 0; }
+  padding: 22px 0 0;
+  margin: 0; }
 
 .order-form__legend {
   font-weight: 700;
@@ -755,12 +769,69 @@ body {
   line-height: 18px;
   color: #444444; }
 
+.order-form__text-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
+.order-form__phone-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
+.order-form__email-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
+.order-form__add-info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
+.order-form__field--name {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .order-form__disclaimer {
   font-size: 14px;
   line-height: 16px; }
 
 .order-form__button {
   line-height: 16px; }
+
+@media (min-width: 768px) {
+  .order-form__fieldset {
+    position: relative;
+    padding-left: 167px; }
+  .order-form__legend {
+    position: absolute;
+    left: 0;
+    top: 30px; }
+  .order-form__wrapper {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 768px;
+    padding: 50px 50px; }
+  .order-form__wrapper--gray {
+    background-color: #f1f1f1; }
+  .order-form__fieldset--color .order-form__fieldset-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .order-form__fieldset--color .order-form__field {
+    width: 248px; } }
 
 .page-footer {
   background-color: #f1f1f1; }
@@ -836,6 +907,10 @@ body {
 .reviews__button {
   font-size: 18px; }
 
+@media (min-width: 1250px) {
+  .reviews {
+    padding-left: 175px; } }
+
 @media (min-width: 768px) {
   .search__link-text {
     display: none; }
@@ -843,7 +918,9 @@ body {
     width: 85px; } }
 
 .social {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .user-nav {
   margin: 0;
