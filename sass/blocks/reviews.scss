@@ -9,6 +9,7 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .reviews__list {
@@ -20,6 +21,8 @@
 .reviews__review {
   font-size: 15px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .reviews__item {
@@ -27,15 +30,19 @@
 }
 
 .reviews__author-name {
+  display: block;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   font-style: normal;
+  margin-bottom: 12px;
 }
 
 .reviews__author-twitter {
   font-size: 17px;
   font-weight: 30px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 

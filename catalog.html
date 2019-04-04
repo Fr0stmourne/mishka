@@ -1,165 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mishka</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="page-header">
-      <nav class="page-header__nav nav container">
-        <div class="nav__logo">
-          <img
-            src="./img/logo-mobile.svg"
-            width="86"
-            height="35"
-            alt="Логотип компании 'Мишка'"
-          />
-          <h1 class="visually-hidden nav__title">Mishka</h1>
-        </div>
-        <ul class="nav__menu menu">
-          <li class="menu__item">
-            <a class="nav__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a class="nav__link" href="#">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="nav__options-menu">
-          <li class="nav__options-item">
-            <a href="#" class="nav__options-link nav__link"
-              >Новые поступления</a
-            >
-          </li>
-          <li class="nav__options-item">
-            <a href="#" class="nav__options-link nav__link">Распродажа</a>
-          </li>
-        </ul>
-        <div class="nav__delivery">Бесплатная доставка по России</div>
-        <div class="nav__search search">
-          <a href="#" class="nav__link search__link"
-            ><span class="search__link-text">Поиск по сайту</span></a
-          >
-        </div>
-        <ul class="nav__user-nav user-nav">
-          <li class="user-nav__item">
-            <a class="nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="intro">
-        <h2 class="intro__title">Каталог товаров</h2>
-      </div>
-    </header>
-    <main class="page-main">
-      <div class="container">
-        <section class="catalog">
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <img
-                src="./img/photo-hare-mobile@1x.jpg"
-                alt="Зайчик-попрыгайчик"
-                height="195"
-                width="260"
-                class="catalog__item-photo"
-              />
-              <div class="catalog__item-info">
-                <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
-                <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-                <span class="catalog__item-price">1 200 руб.</span>
-                <button class="catalog__button buy-button">Купить</button>
-              </div>
-            </li>
-            <li class="catalog__item">
-              <img
-                src="./img/photo-bowl-mobile@1x.jpg"
-                alt="Корзинка для белья"
-                height="195"
-                width="260"
-                class="catalog__item-photo"
-              />
-              <div class="catalog__item-info">
-                <h3 class="catalog__item-title">Корзинка для белья</h3>
-                <p class="catalog__item-description">
-                  Диаметр 15 см, высота 10 см
-                </p>
-                <span class="catalog__item-price">690 руб.</span>
-                <button class="catalog__button buy-button">Купить</button>
-              </div>
-            </li>
-            <li class="catalog__item">
-              <img
-                src="./img/photo-toys-mobile@1x.jpg"
-                alt="Большая корзинка для игрушек"
-                height="195"
-                width="260"
-                class="catalog__item-photo"
-              />
-              <div class="catalog__item-info">
-                <h3 class="catalog__item-title">
-                  Большая корзинка для игрушек
-                </h3>
-                <p class="catalog__item-description">
-                  Диаметр 30 см, высота 30 см
-                </p>
-                <span class="catalog__item-price">1 500 руб.</span>
-                <button class="catalog__button buy-button">Купить</button>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="production">
-          <h2 class="production__title">Процесс производства</h2>
-          <div class="production__video">
-            <span class="visually-hidden"
-              >Видео о том, как мы производим наши товары</span
-            >
-          </div>
-          <p class="production__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное
-            видео о том, как появляются наши товары.
-          </p>
-          <button class="production__button button">Сделать заказ</button>
-        </section>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="container page-footer__wrapper">
-        <img src="./img/logo-footer.svg" alt="" class="page-footer__logo" />
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a href="#" class="social__link social-link--instagram"
-              >Инстаграм</a
-            >
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social-link--facebook">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social-link--twitter">Твиттер</a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a href="#" class="copyright__link"
-            ><span class="visually-hidden">HTML Academy</span></a
-          >
-        </div>
-      </div>
-    </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Mishka</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <section class="size-modal visually-hidden">
-      <b class="size-modal__title">Добавить в корзину</b>
-      <p class="size-modal__text">Выберите размер:</p>
-      <ul class="size-modal__sizes">
-        <li class="size-modal__size">S</li>
-        <li class="size-modal__size">L</li>
-        <li class="size-modal__size">M</li>
+<body>
+  <header class="page-header">
+    <nav class="page-header__nav nav container">
+      <div class="nav__logo">
+        <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип компании 'Мишка'" />
+        <h1 class="visually-hidden nav__title">Mishka</h1>
+      </div>
+      <ul class="nav__menu menu">
+        <li class="menu__item">
+          <a class="nav__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="menu__item">
+          <a class="nav__link" href="#">Вязание на заказ</a>
+        </li>
       </ul>
-      <button class="size-modal__button button button--green">Добавить</button>
-    </section>
-  </body>
+      <ul class="nav__options-menu">
+        <li class="nav__options-item">
+          <a href="#" class="nav__options-link nav__link">Новые поступления</a>
+        </li>
+        <li class="nav__options-item">
+          <a href="#" class="nav__options-link nav__link">Распродажа</a>
+        </li>
+      </ul>
+      <div class="nav__delivery">Бесплатная доставка по России</div>
+      <div class="nav__search search">
+        <a href="#" class="nav__link search__link"><span class="search__link-text">Поиск по сайту</span></a>
+      </div>
+      <ul class="nav__user-nav user-nav">
+        <li class="user-nav__item">
+          <a class="nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="intro">
+      <h2 class="intro__title">Каталог товаров</h2>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="container">
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img src="./img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" height="195" width="260"
+              class="catalog__item-photo" />
+            <div class="catalog__item-info">
+              <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
+              <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
+              <span class="catalog__item-price">1 200 руб.</span>
+              <button class="catalog__button buy-button">Купить</button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" height="195" width="260"
+              class="catalog__item-photo" />
+            <div class="catalog__item-info">
+              <h3 class="catalog__item-title">Корзинка для белья</h3>
+              <p class="catalog__item-description">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <span class="catalog__item-price">690 руб.</span>
+              <button class="catalog__button buy-button">Купить</button>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" height="195" width="260"
+              class="catalog__item-photo" />
+            <div class="catalog__item-info">
+              <h3 class="catalog__item-title">
+                Большая корзинка для игрушек
+              </h3>
+              <p class="catalog__item-description">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <span class="catalog__item-price">1 500 руб.</span>
+              <button class="catalog__button buy-button">Купить</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video">
+          <span class="visually-hidden">Видео о том, как мы производим наши товары</span>
+        </div>
+        <p class="production__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное
+          видео о том, как появляются наши товары.
+        </p>
+        <button class="production__button button">Сделать заказ</button>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container page-footer__wrapper">
+      <img src="./img/logo-footer.svg" alt="" class="page-footer__logo" />
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social-link--instagram">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social-link--facebook">Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social-link--twitter">Твиттер</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a href="#" class="copyright__link"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <section class="size-modal visually-hidden">
+    <b class="size-modal__title">Добавить в корзину</b>
+    <p class="size-modal__text">Выберите размер:</p>
+    <ul class="size-modal__sizes">
+      <li class="size-modal__size">S</li>
+      <li class="size-modal__size">L</li>
+      <li class="size-modal__size">M</li>
+    </ul>
+    <button class="size-modal__button button button--green">Добавить</button>
+  </section>
+</body>
+
 </html>

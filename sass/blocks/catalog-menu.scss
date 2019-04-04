@@ -1,4 +1,7 @@
 .catalog-menu__link {
+  display: block;
+
+  padding-right: 115px;
   color: #fff;
   font-weight: 700;
   font-size: 19px;
@@ -13,7 +16,7 @@
 }
 
 .catalog-menu__item {
-  padding: 30px 30px;
+  padding: 35px 30px;
 }
 
 .catalog-menu__item--interior {
