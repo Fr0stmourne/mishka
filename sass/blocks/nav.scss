@@ -4,8 +4,6 @@
   padding: 27px 0;
   text-decoration: none;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
   color: #000;
 }
 
@@ -17,6 +15,8 @@
 }
 
 .nav__delivery {
+  font-size: 15px;
+  line-height: 24px;
   display: none;
 }
 
@@ -42,10 +42,17 @@
     order: 1;
   }
 
+  .nav__link {
+    padding: 20px 0;
+    text-align: right;
+  }
+
   .nav__delivery {
     display: block;
+    text-align: right;
     order: 1;
     width: 240px;
+    padding: 20px 0;
   }
 
   .nav__logo {

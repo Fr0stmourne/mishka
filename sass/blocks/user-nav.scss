@@ -1,5 +1,12 @@
 .user-nav {
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
   list-style: none;
 }
+
+.user-nav__item {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {}

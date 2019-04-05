@@ -6,4 +6,13 @@
 
 .menu__item {
   flex-grow: 1;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .menu__item {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

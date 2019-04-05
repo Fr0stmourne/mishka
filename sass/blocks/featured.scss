@@ -77,23 +77,41 @@
     flex-wrap: wrap;
   }
 
-  .featured__feature {
-    width: 165px;
-    margin: 0;
-  }
-
   .featured__title {
     display: inline-block;
     width: 500px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured__item-type {
+    width: 125px;
+    text-align: center;
+    line-height: 17px;
   }
 
   .featured__item-info {
     position: relative;
     box-sizing: border-box;
     width: 668px;
-    padding-right: 334px;
+    padding-right: 378px;
     min-height: 410px;
   }
+
+  .featured__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .featured__details {
+    margin-bottom: 57px;
+  }
+
+  .featured__feature {
+    width: 90px;
+    margin: 0;
+  }
+
 
   .featured__photo {
     position: absolute;
@@ -101,10 +119,6 @@
     top: 0;
     width: 334px;
     height: auto;
-  }
-
-  .featured__order-info {
-    width: 200px;
   }
 }
 

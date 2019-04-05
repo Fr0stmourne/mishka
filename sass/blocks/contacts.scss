@@ -1,7 +1,6 @@
 .contacts {
   position: relative;
-  padding: 42px 0 0;
-  margin-bottom: 42px;
+  padding: 42px 0;
   outline: 1px solid gray;
 }
 
@@ -9,23 +8,47 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: left;
 }
 
 .contacts__contact {
+  width: 60px;
   font-size: 15px;
   line-height: 30px;
+  vertical-align: top;
+}
+
+.contacts__table {
+  border-collapse: collapse;
 }
 
 .contacts__value {
   font-size: 15px;
   line-height: 30px;
+  padding-bottom: 32px;
+}
+
+.contacts__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid $cyan;
+
 }
 
 .contacts__map {
-  margin-bottom: 42px;
+  display: block;
+  width: 320px;
+  margin: 0 auto 42px;
+
+}
+
+.contacts__button {
+  display: block;
   width: 260px;
-  transform: scale(1.23);
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

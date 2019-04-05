@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="page-header wrapper">
+  <header class="page-header">
     <nav class="page-header__nav nav container">
       <div class="nav__logo">
         <img src="./img/logo-mobile.svg" width="86" height="35" alt="Логотип компании 'Мишка'" />
@@ -31,7 +31,7 @@
       </ul>
       <div class="nav__delivery">Бесплатная доставка по России</div>
       <div class="nav__search search">
-        <a href="#" class="nav__link search__link">S<span class="search__link-text">Поиск по сайту</span></a>
+        <a href="#" class="nav__link search__link"><span class="search__link-text">Поиск по сайту</span></a>
       </div>
       <ul class="nav__user-nav user-nav">
         <li class="user-nav__item">
@@ -43,7 +43,7 @@
       <h2 class="intro__title">Милые штуки ручной<br> работы для дома</h2>
     </div>
   </header>
-  <main class="page-main wrapper">
+  <main class="page-main">
     <section class="catalog-menu">
       <h2 class="catalog-menu__title visually-hidden">Ассортимент товаров</h2>
       <ul class="catalog-menu__list">
@@ -134,7 +134,7 @@
               </blockquote>
             </li>
           </ul>
-          <div class="slider__toggles">
+          <div class="reviews__toggles slider__toggles">
             <button class="slider__prev">
               Предыдущий
             </button>
@@ -147,35 +147,37 @@
           </button>
         </div>
       </section>
-      <section class="contacts">
+    </div>
+    <section class="contacts">
+      <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <table class="contacts__table">
           <tbody class="contacts__table-body">
             <tr>
               <td class="contacts__contact">e-mail:</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
+              <td class="contacts__value"><a class="contacts__link" href="#">info@mimimishkashop.ru</a></td>
             </tr>
             <tr>
               <td class="contacts__contact">адрес:</td>
               <td class="contacts__value">
-                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+                г. Санкт-Петербург, <br> ул. Большая <br> Конюшенная, <br> д. 19/8, офис 101
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <img src="./img/map-mobile@1x.jpg" alt="" class="contacts__map" />
 
-        <img src="./img/map-mobile@1x.jpg" alt="" class="contacts__map" />
+      <button class="contacts__button button">Напишите нам</button>
+    </section>
 
-        <button class="contacts__button button">Напишите нам</button>
-      </section>
-    </div>
   </main>
-  <footer class="page-footer wrapper">
+  <footer class="page-footer">
     <div class="container page-footer__wrapper">
       <img src="./img/logo-footer.svg" alt="" class="page-footer__logo" />
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link social-link--instagram">Инстаграм</a>
+          <a href="#" class="social__link social-link--instagram"> Инстаграм</a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social-link--facebook">Фейсбук</a>

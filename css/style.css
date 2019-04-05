@@ -81,6 +81,12 @@ body {
   padding-top: 57px; }
 
 @media (min-width: 768px) {
+  .about-us {
+    margin-bottom: 80px; }
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 0; }
   .about-us__advantages {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -90,7 +96,10 @@ body {
             flex-direction: row;
     width: 668px; }
   .about-us__item {
-    width: 330px; } }
+    width: 330px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 40px; } }
 
 @media (min-width: 1150px) {
   .about-us {
@@ -110,6 +119,10 @@ body {
 
 .catalog-menu__link {
   display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 260px;
+  margin: 0 auto;
   padding-right: 115px;
   color: #fff;
   font-weight: 700;
@@ -133,7 +146,7 @@ body {
 
 @media (min-width: 768px) {
   .catalog-menu {
-    margin-top: -135px; }
+    margin-top: -110px; }
   .catalog-menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -144,11 +157,14 @@ body {
   .catalog-menu__item {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 334px; }
+    width: 334px;
+    padding-left: 35px; }
   .catalog-menu__link {
     display: block;
-    padding: 10px 50px;
-    width: 140px; } }
+    margin: 0;
+    width: 140px;
+    font-size: 20px;
+    line-height: 30px; } }
 
 @media (min-width: 1150px) {
   .catalog-menu__item {
@@ -187,29 +203,46 @@ body {
 
 .contacts {
   position: relative;
-  padding: 42px 0 0;
-  margin-bottom: 42px;
+  padding: 42px 0;
   outline: 1px solid gray; }
 
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin: 0; }
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: left; }
 
 .contacts__contact {
+  width: 60px;
   font-size: 15px;
-  line-height: 30px; }
+  line-height: 30px;
+  vertical-align: top; }
+
+.contacts__table {
+  border-collapse: collapse; }
 
 .contacts__value {
   font-size: 15px;
-  line-height: 30px; }
+  line-height: 30px;
+  padding-bottom: 32px; }
+
+.contacts__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #63d1bb; }
 
 .contacts__map {
-  margin-bottom: 42px;
+  display: block;
+  width: 320px;
+  margin: 0 auto 42px; }
+
+.contacts__button {
+  display: block;
   width: 260px;
-  -webkit-transform: scale(1.23);
-          transform: scale(1.23); }
+  margin: 0 auto; }
 
 @media (min-width: 768px) {
   .contacts__table-body {
@@ -229,6 +262,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; } }
+
+.copyright {
+  padding: 28px 0; }
 
 .copyright__text {
   font-weight: 700;
@@ -314,27 +350,36 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .featured__feature {
-    width: 165px;
-    margin: 0; }
   .featured__title {
     display: inline-block;
-    width: 500px; }
+    width: 500px;
+    font-size: 43px;
+    line-height: 50px; }
+  .featured__item-type {
+    width: 125px;
+    text-align: center;
+    line-height: 17px; }
   .featured__item-info {
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 668px;
-    padding-right: 334px;
+    padding-right: 378px;
     min-height: 410px; }
+  .featured__description {
+    font-size: 17px;
+    line-height: 30px; }
+  .featured__details {
+    margin-bottom: 57px; }
+  .featured__feature {
+    width: 90px;
+    margin: 0; }
   .featured__photo {
     position: absolute;
     right: 0;
     top: 0;
     width: 334px;
-    height: auto; }
-  .featured__order-info {
-    width: 200px; } }
+    height: auto; } }
 
 @media (min-width: 1150px) {
   .featured {
@@ -352,7 +397,7 @@ body {
 .intro--img {
   background-color: #fafafa;
   background-image: url(../img/hero-mobile@1x.jpg);
-  background-position: center -10px;
+  background-position: center 10px;
   background-repeat: no-repeat; }
 
 .intro__title {
@@ -366,9 +411,12 @@ body {
 
 @media (min-width: 768px) {
   .intro {
-    margin-top: -78px;
-    padding: 155px 30px 0;
+    margin-top: -68px;
+    padding: 115px 30px 0;
     text-align: center; }
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px; }
   .intro--img {
     min-height: 630px;
     background-image: url(../img/hero-tablet@1x.jpg); } }
@@ -385,7 +433,14 @@ body {
 .menu__item {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  font-size: 17px;
+  line-height: 24px; }
+
+@media (min-width: 768px) {
+  .menu__item {
+    font-size: 15px;
+    line-height: 24px; } }
 
 .nav__link {
   text-align: center;
@@ -393,8 +448,6 @@ body {
   padding: 27px 0;
   text-decoration: none;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
   color: #000; }
 
 .nav__logo {
@@ -403,6 +456,8 @@ body {
   text-align: center; }
 
 .nav__delivery {
+  font-size: 15px;
+  line-height: 24px;
   display: none; }
 
 .nav__options-menu {
@@ -429,12 +484,17 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
+  .nav__link {
+    padding: 20px 0;
+    text-align: right; }
   .nav__delivery {
     display: block;
+    text-align: right;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 240px; }
+    width: 240px;
+    padding: 20px 0; }
   .nav__logo {
     width: 320px; }
   .nav__user-nav {
@@ -673,12 +733,35 @@ body {
 
 .reviews__author-twitter {
   font-size: 17px;
-  font-weight: 30px;
+  line-height: 30px;
   margin: 0;
   margin-bottom: 30px; }
 
 .reviews__button {
   font-size: 18px; }
+
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+    padding-bottom: 60px; }
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px; }
+  .reviews__button {
+    position: absolute;
+    width: auto;
+    padding: 15px 30px;
+    right: 0;
+    top: 25px; }
+  .reviews__review {
+    font-size: 17px; }
+  .reviews__author-name {
+    font-size: 18px;
+    margin-bottom: 0; }
+  .reviews__toggles {
+    position: absolute;
+    right: 0;
+    bottom: 110px; } }
 
 @media (min-width: 1150px) {
   .reviews {
@@ -688,7 +771,10 @@ body {
   .search__link-text {
     display: none; }
   .search__link {
-    width: 85px; } }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 85px;
+    height: 100%; } }
 
 .slider__toggles {
   display: -webkit-box;
@@ -708,9 +794,24 @@ body {
 .social {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 25px 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.social__link {
+  text-decoration: none;
+  color: #000; }
 
 .user-nav {
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
   list-style: none; }
+
+.user-nav__item {
+  font-size: 17px;
+  line-height: 24px; }

@@ -29,6 +29,17 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .about-us {
+    margin-bottom: 80px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+
   .about-us__advantages {
     flex-wrap: wrap;
     flex-direction: row;
@@ -37,6 +48,9 @@
 
   .about-us__item {
     width: 330px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 40px;
   }
 }
 

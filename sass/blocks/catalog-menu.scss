@@ -1,6 +1,8 @@
 .catalog-menu__link {
   display: block;
-
+  box-sizing: border-box;
+  width: 260px;
+  margin: 0 auto;
   padding-right: 115px;
   color: #fff;
   font-weight: 700;
@@ -29,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-menu {
-    margin-top: -135px;
+    margin-top: -110px;
   }
 
   .catalog-menu__list {
@@ -40,12 +42,16 @@
   .catalog-menu__item {
     box-sizing: border-box;
     width: 334px;
+    padding-left: 35px;
   }
 
   .catalog-menu__link {
     display: block;
-    padding: 10px 50px;
+    margin: 0;
+
     width: 140px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

@@ -9,10 +9,6 @@ body {
   margin: 0 auto;
 }
 
-// .wrapper {
-//   width: 320px;
-//   margin: 0 auto;
-// }
 
 .visually-hidden {
   border: 0;
@@ -31,9 +27,6 @@ body {
 
 
 @media (min-width: $tablet-width) {
-  // .wrapper {
-  //   width: $tablet-width;
-  // }
 
   .container {
     width: 668px;
@@ -54,9 +47,6 @@ body {
 }
 
 @media (min-width: $desktop-width) {
-  // .wrapper {
-  //   width: $desktop-width;
-  // }
 
   .container {
     width: 1050px;
