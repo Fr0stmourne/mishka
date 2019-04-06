@@ -1,4 +1,5 @@
 .contacts {
+  width: 100%;
   position: relative;
   padding: 42px 0;
   outline: 1px solid gray;
@@ -25,6 +26,7 @@
 }
 
 .contacts__value {
+  width: 160px;
   font-size: 15px;
   line-height: 30px;
   padding-bottom: 32px;
@@ -40,9 +42,7 @@
 
 .contacts__map {
   display: block;
-  width: 320px;
   margin: 0 auto 42px;
-
 }
 
 .contacts__button {
@@ -56,6 +56,19 @@
     display: flex;
   }
 
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__value {
+    padding-right: 50px;
+    font-size: 17px;
+  }
+
+  .contacts__contact {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -66,7 +79,6 @@
 
   .contacts__map {
     position: relative;
-    left: 500px;
   }
 
 

@@ -36,15 +36,24 @@
     justify-content: space-between;
   }
 
+  .nav__logo {
+    width: 167px;
+    box-sizing: border-box;
+    text-align: left;
+
+  }
+
+  .nav__search {
+    margin-left: auto;
+  }
+
   .nav__menu {
-    width: 335px;
-    display: flex;
     order: 1;
   }
 
   .nav__link {
     padding: 20px 0;
-    text-align: right;
+    text-align: left;
   }
 
   .nav__delivery {
@@ -54,14 +63,6 @@
     width: 240px;
     padding: 20px 0;
   }
-
-  .nav__logo {
-    width: 320px;
-  }
-
-  .nav__user-nav {
-    width: 263px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -69,8 +70,27 @@
     order: -1;
   }
 
+  .nav__logo {
+    width: 190px;
+    text-align: center;
+  }
+
+  .nav__link {
+    text-align: left;
+  }
+
   .nav__options-menu {
+    width: 350px;
     display: flex;
     order: 1;
+  }
+
+  .nav__options-item {
+    margin-right: 40px;
+  }
+
+  .nav__options-link {
+    font-size: 15px;
+    line-height: 24px;
   }
 }

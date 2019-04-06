@@ -6,11 +6,7 @@
   outline: 1px solid gray;
 }
 
-.production__video {
-  width: 260px;
-  height: 150px;
-  background-image: url(../img/video-mobile@1x.jpg);
-}
+.production__video {}
 
 .production__title {
   font-weight: 700;
@@ -30,6 +26,17 @@
 @media (min-width: $tablet-width) {
   .production__video {
     order: -1;
+  }
+
+  .production__video {}
+
+  .production__title {
+    font-size: 20px;
+  }
+
+  .production__description {
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 

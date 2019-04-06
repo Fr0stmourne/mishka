@@ -67,6 +67,7 @@
     padding: 15px 30px;
     right: 0;
     top: 25px;
+    font-size: 17px;
   }
 
   .reviews__review {
@@ -83,10 +84,23 @@
     right: 0;
     bottom: 110px;
   }
+
+
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 175px;
   }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
+  }
+
+
 }

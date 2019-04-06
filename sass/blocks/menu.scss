@@ -15,4 +15,21 @@
     font-size: 15px;
     line-height: 24px;
   }
+
+  .nav__menu {
+    width: 335px;
+    display: flex;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu__item {
+    font-size: 17px;
+  }
+
+  .menu {
+    width: 400px;
+    justify-content: space-between;
+  }
 }
