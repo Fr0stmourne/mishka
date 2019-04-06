@@ -52,6 +52,8 @@
 
 .featured__photo {
   margin-bottom: 26px;
+  width: 260px;
+  height: 315px;
 }
 
 .featured__value {
@@ -127,6 +129,7 @@
     position: relative;
     padding-left: 175px;
     padding-top: 130px;
+    padding-bottom: 75px;
   }
 
   .featured__item-type {
@@ -136,11 +139,29 @@
   }
 
   .featured__title {
+    width: auto;
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 55px;
+  }
+
+  .featured__description {
+    margin-bottom: 60px;
+  }
+
+  .featured__details {
+    margin-bottom: 125px;
   }
 
   .featured__price {
     font-size: 20px;
+  }
+
+  .featured__photo {
+    width: 525px;
+    height: auto;
+    top: -135px;
+    right: -210px;
+    z-index: -1;
   }
 }

@@ -74,16 +74,33 @@
 @media (min-width: $desktop-width) {
 
   .contacts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 170px;
     padding-left: 175px;
   }
 
   .contacts__map {
-    position: relative;
+    position: absolute;
+    left: 300px;
+    top: -402px;
   }
 
+  .contacts__map-container {
+    width: 1050px;
+    margin: 0 auto;
+    position: relative;
+  }
 
   .contacts__table-body {
     width: 350px;
     flex-direction: column;
+  }
+
+  .contacts__button {
+    position: relative;
+    right: 395px;
   }
 }

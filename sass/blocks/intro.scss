@@ -9,6 +9,12 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .intro--img {
+    background-image: url(../../img/hero-mobile@2x.jpg)
+  }
+}
+
 .intro__title {
   font-family: "Open Sans";
   margin: 0;
@@ -33,7 +39,13 @@
 
   .intro--img {
     min-height: 630px;
-    background-image: url(../img/hero-tablet@1x.jpg);
+    background-image: url(../../img/hero-tablet@1x.jpg);
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .intro--img {
+      background-image: url(../../img/hero-tablet@2x.jpg)
+    }
   }
 }
 
@@ -45,5 +57,11 @@
   .intro__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .intro--img {
+      background-image: url(../../img/hero-desktop@2x.jpg)
+    }
   }
 }

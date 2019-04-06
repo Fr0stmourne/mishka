@@ -8,7 +8,7 @@
 }
 
 
-.nav__logo {
+.nav__logo-container {
   display: block;
   padding: 20px 0;
   text-align: center;
@@ -36,11 +36,16 @@
     justify-content: space-between;
   }
 
-  .nav__logo {
+  .nav__logo-container {
     width: 167px;
     box-sizing: border-box;
+    padding: auto;
     text-align: left;
+  }
 
+  .nav__logo {
+    width: 114px;
+    height: 51px;
   }
 
   .nav__search {
@@ -70,12 +75,14 @@
     order: -1;
   }
 
-  .nav__logo {
-    width: 190px;
+  .nav__logo-container {
+    padding: 10px 0;
+    width: 180px;
     text-align: center;
   }
 
   .nav__link {
+    padding: auto;
     text-align: left;
   }
 

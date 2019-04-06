@@ -9,15 +9,29 @@
   line-height: 24px;
 }
 
-.user-nav__link {}
-
 @media (min-width: $tablet-width) {
-
   .user-nav__link {
     text-align: right;
   }
 
   .user-nav {
     width: 263px;
+    padding: 0;
+  }
+
+  .user-nav__item {
+    height: 100%;
+  }
+
+  .user-nav__link {
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav__link {
+    padding: 20px 0;
   }
 }
