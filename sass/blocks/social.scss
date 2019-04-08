@@ -1,13 +1,24 @@
 .social {
   list-style: none;
-  margin: 0;
-  padding: 25px 0;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .social__link {
   text-decoration: none;
   color: #000;
+  margin-top: auto;
 }
+
+.social__item {
+  display: flex;
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {}

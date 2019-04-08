@@ -2,7 +2,18 @@
   width: 100%;
   position: relative;
   padding: 42px 0;
-  outline: 1px solid gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 7px;
+  }
 }
 
 .contacts__title {
@@ -52,6 +63,21 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .contacts {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: auto 20px;
+    }
+  }
+
   .contacts__table-body {
     display: flex;
   }
@@ -74,17 +100,32 @@
 @media (min-width: $desktop-width) {
 
   .contacts {
+    max-width: 875px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 170px;
     padding-left: 175px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 20px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: auto 20px;
+    }
   }
 
   .contacts__map {
     position: absolute;
-    left: 300px;
+    left: 350px;
     top: -402px;
   }
 
@@ -101,6 +142,6 @@
 
   .contacts__button {
     position: relative;
-    right: 395px;
+    right: 255px;
   }
 }
