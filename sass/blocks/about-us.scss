@@ -34,6 +34,7 @@
 }
 
 .about-us__item {
+  position: relative;
   width: 260px;
   font-weight: 700;
   font-size: 17px;
@@ -41,10 +42,17 @@
   padding-top: 57px;
 }
 
+.about-us__icon {
+  position: absolute;
+  top: 10px;
+
+}
+
 @media (min-width: $tablet-width) {
 
   .about-us {
-    margin-bottom: 80px;
+    padding-top: 70px;
+    margin-bottom: 70px;
 
     &::before {
       content: "";
@@ -82,7 +90,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     width: 700px;
-    padding: 0 175px;
+    padding: 70px 175px 0;
 
     &::before {
       content: "";

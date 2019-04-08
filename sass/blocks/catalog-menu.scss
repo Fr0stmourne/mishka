@@ -1,4 +1,5 @@
 .catalog-menu__link {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 260px;
@@ -34,13 +35,30 @@
   background-color: #56c3b2;
 }
 
+.catalog-menu__icon {
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+}
+
+.catalog-menu__icon--interior {
+  right: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-menu {
     margin-top: -130px;
+  }
 
-    .catalog-menu__list {
-      position: relative;
-    }
+  .catalog-menu__list {
+    position: relative;
+  }
+
+
+  .catalog-menu__icon {
+    top: 0;
+    right: -130px;
   }
 
   .catalog-menu__bg-zigzag {
@@ -74,6 +92,12 @@
   .catalog-menu__item {
     width: 525px;
   }
+
+  .catalog-menu__icon {
+    top: 0;
+    right: -300px;
+  }
+
 
   .catalog-menu__bg-zigzag {
     margin-top: -30px;

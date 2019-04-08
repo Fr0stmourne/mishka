@@ -1,7 +1,7 @@
 .nav__link {
-  text-align: center;
+  text-align: left;
   display: block;
-  padding: 27px 0;
+  padding: 27px 0 27px 50px;
   text-decoration: none;
   font-weight: 700;
   color: #000;
@@ -39,7 +39,6 @@
   .nav__logo-container {
     width: 167px;
     box-sizing: border-box;
-    padding: auto;
     text-align: left;
   }
 
@@ -78,6 +77,7 @@
   .nav__logo-container {
     padding: 10px 0;
     width: 180px;
+    margin-left: -50px;
     text-align: center;
   }
 

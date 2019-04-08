@@ -63,10 +63,19 @@
       <h2 class="catalog-menu__title visually-hidden">Ассортимент товаров</h2>
       <ul class="catalog-menu__list">
         <li class="catalog-menu__item catalog-menu__item--interior">
-          <a href="#" class="catalog-menu__link">Предметы интерьера</a>
+          <a href="#" class="catalog-menu__link">Предметы интерьера
+            <svg class="catalog-menu__icon catalog-menu__icon--interior" width="40" height="62" fill="#149080">
+              <use xlink:href="img/svg-sprite.svg#icon-interior"></use>
+            </svg>
+          </a>
         </li>
         <li class="catalog-menu__item catalog-menu__item--toys">
-          <a href="#" class="catalog-menu__link">Детские игрушки</a>
+          <a href="#" class="catalog-menu__link">Детские игрушки
+              <svg class="catalog-menu__icon catalog-menu__icon--toys" width="60" height="60" fill="#149080">
+                  <use xlink:href="img/svg-sprite.svg#icon-toy"></use>
+                </svg>
+
+          </a>
         </li>
       </ul>
 
@@ -123,26 +132,44 @@
       <div class="container">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__advantages">
-          <li class="about-us__item about-us__item--eco">
+          <li class="about-us__item ">
+              <svg class="about-us__icon" width="32" height="37" fill="#63d1bb">
+                <use xlink:href="img/svg-sprite.svg#icon-feature-1"></use>
+              </svg>
             Экологически <br />
             чистые материалы
           </li>
-          <li class="about-us__item about-us__item--style">
+          <li class="about-us__item">
+              <svg class="about-us__icon" width="47" height="27" fill="#63d1bb">
+                <use xlink:href="img/svg-sprite.svg#icon-feature-3"></use>
+              </svg>
             Скандинавский стиль<br />
             по российской цене
           </li>
-          <li class="about-us__item about-us__item--likes">
+          <li class="about-us__item">
+              <svg class="about-us__icon" width="34" height="27" fill="#63d1bb">
+                <use xlink:href="img/svg-sprite.svg#icon-feature-5"></use>
+              </svg>
             Увеличивает лайки<br />
             на фотографиях
           </li>
-          <li class="about-us__item about-us__item--love">
+          <li class="about-us__item">
+              <svg class="about-us__icon" width="35" height="34" fill="#63d1bb">
+                <use xlink:href="img/svg-sprite.svg#icon-feature-2"></use>
+              </svg>
             Связано вручную с <br />
             любовью и умилением
           </li>
-          <li class="about-us__item about-us__item--support">
+          <li class="about-us__item">
+              <svg class="about-us__icon" width="55" height="23" fill="#63d1bb">
+                <use xlink:href="img/svg-sprite.svg#icon-feature-4"></use>
+              </svg>
             Поддержка отечественного производителя
           </li>
           <li class="about-us__item about-us__item--package">
+              <svg class="about-us__icon" width="33" height="32" fill="#63d1bb">
+                <use xlink:href="img/svg-sprite.svg#icon-feature-6"></use>
+              </svg>
             Поставляется в <br />
             подарочной упаковке
           </li>
@@ -172,10 +199,14 @@
           </ul>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__prev">
-              Предыдущий
+              <span class="visually-hidden">
+                Предыдущий
+              </span>
             </button>
             <button class="slider__next">
-              Следующий
+              <span class="visually-hidden">
+                Следующий
+              </span>
             </button>
           </div>
           <button class="reviews__button button">
@@ -207,6 +238,9 @@
         </table>
       </div>
       <div class="contacts__map-container">
+        <svg class="contacts__map-pin" width="40" height="62" fill="#149080">
+            <use xlink:href="img/svg-sprite.svg#icon-map-pin"></use>
+        </svg>
         <picture>
           <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x" />
           <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x" />

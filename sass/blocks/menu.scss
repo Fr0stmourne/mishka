@@ -26,6 +26,16 @@
 @media (min-width: $desktop-width) {
   .menu__item {
     font-size: 17px;
+    padding-left: 30px;
+    border-right: 1px solid $gray;
+  }
+
+  .menu__item:last-of-type {
+    border-right: 0;
+  }
+
+  .menu__item:first-of-type {
+    padding-left: 0;
   }
 
   .menu {
