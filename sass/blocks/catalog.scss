@@ -1,12 +1,11 @@
 .catalog {
   margin: 30px 0;
-  outline: 1px solid gray;
 }
 
 .catalog__item {
   display: flex;
   flex-direction: column;
-  outline: 1px solid black;
+  border: 2px solid $gray;
   margin-bottom: 30px;
 }
 

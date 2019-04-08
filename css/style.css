@@ -186,22 +186,12 @@ img {
   list-style: none;
   padding: 0;
   margin: 0; }
-  .catalog-menu__list::after {
-    margin-top: -25px;
-    position: relative;
-    content: "";
-    display: none;
-    width: 100%;
-    height: 34px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: auto 34px; }
 
 .catalog-menu__bg-zigzag {
   display: none; }
 
 .catalog-menu__item {
-  padding: 35px 30px; }
+  padding: 35px 30px 40px; }
 
 .catalog-menu__item--interior {
   background-color: #63d1bb; }
@@ -211,19 +201,9 @@ img {
 
 @media (min-width: 768px) {
   .catalog-menu {
-    margin-top: -120px; }
+    margin-top: -130px; }
     .catalog-menu .catalog-menu__list {
       position: relative; }
-    .catalog-menu::after {
-      margin-top: -25px;
-      position: relative;
-      content: "";
-      display: block;
-      width: 100%;
-      height: 34px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: auto 34px; }
   .catalog-menu__bg-zigzag {
     display: block;
     fill: red;
@@ -255,8 +235,7 @@ img {
     fill: red; } }
 
 .catalog {
-  margin: 30px 0;
-  outline: 1px solid gray; }
+  margin: 30px 0; }
 
 .catalog__item {
   display: -webkit-box;
@@ -266,7 +245,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: 1px solid black;
+  border: 2px solid #f1f1f1;
   margin-bottom: 30px; }
 
 .catalog__list {
@@ -500,8 +479,7 @@ img {
   line-height: 18px; }
 
 .featured {
-  margin: 32px 0;
-  outline: 1px solid gray; }
+  margin: 32px 0; }
 
 .featured__title {
   font-weight: 700;
@@ -681,6 +659,18 @@ img {
 @media (min-width: 1150px) {
   .intro--img {
     background-image: url(../img/hero-desktop@1x.jpg); }
+  .intro--img::after {
+    margin-top: -25px;
+    position: block;
+    z-index: 10;
+    bottom: 0;
+    content: "";
+    display: none;
+    width: 100%;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 34px; }
   .intro__title {
     font-size: 53px;
     line-height: 57px; } }
@@ -808,7 +798,6 @@ img {
     line-height: 24px; } }
 
 .order-form {
-  outline: 1px solid gray;
   padding: 30px 0 56px;
   position: relative; }
 
@@ -1089,11 +1078,54 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
+.page-header {
+  position: relative; }
+
+.page-header::after {
+  margin-top: -25px;
+  position: relative;
+  z-index: 10;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 34px;
+  background-image: url("../img/bg-zigzag-fill.svg");
+  background-repeat: repeat-x;
+  background-size: auto 34px; }
+
 @media (min-width: 768px) {
   .page-header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .page-header {
+    padding-bottom: 0px; }
+  .page-header::after {
+    margin-top: -25px;
+    position: relative;
+    z-index: 10;
+    content: "";
+    bottom: -10px;
+    display: block;
+    width: 100%;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 34px; } }
+
+@media (min-width: 1150px) {
+  .page-header::after {
+    margin-top: -25px;
+    position: absolute;
+    z-index: 10;
+    bottom: -20px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 34px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 34px; } }
 
 .production {
   position: relative;
@@ -1105,7 +1137,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 28px 0 52px;
-  outline: 1px solid gray; }
+  border: 2px solid #f1f1f1; }
 
 .production__title {
   position: relative;
@@ -1184,8 +1216,7 @@ img {
 
 .reviews {
   padding: 30px 0 0;
-  margin-bottom: 48px;
-  outline: 1px solid gray; }
+  margin-bottom: 48px; }
 
 .reviews__title {
   font-weight: 700;
