@@ -1,0 +1,38 @@
+.page-footer {
+  background-color: $gray;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 25px 0;
+}
+
+.page-footer__copyright {
+  padding: 28px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+    margin-right: 0;
+  }
+
+  .page-footer__copyright {
+    margin-left: 0;
+  }
+
+  .page-footer__social {
+    margin-left: 70px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {}
