@@ -10,6 +10,23 @@
   text-decoration: none;
   color: #000;
   margin-top: auto;
+
+
+  svg {
+    fill: black;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+    opacity: 1;
+  }
+
+  &:active svg {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .social__item {

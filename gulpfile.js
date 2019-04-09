@@ -58,15 +58,28 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("sprite", function () {
+  return gulp.src("build/img/**/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("svg-sprite.svg"))
+    .pipe(gulp.dest("build/img/sprite"));
+});
+
 gulp.task("build", function (fn) {
   run(
     "clean",
     "copy",
     "style",
     "images",
+    "sprite",
     fn
   );
 });
+
+
 
 
 gulp.task("html:copy", function () {

@@ -8,11 +8,29 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-
 }
 
-.copyright svg {
-  margin-left: 15px;
-  position: relative;
-  top: 10px;
+.copyright__link {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+
+  svg {
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    opacity: 1;
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: #46c1ae;
+  }
 }

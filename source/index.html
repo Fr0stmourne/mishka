@@ -25,10 +25,10 @@
       </div>
       <ul class="nav__menu menu">
         <li class="menu__item">
-          <a class="nav__link" href="#">Каталог товаров</a>
+          <a class="nav__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="menu__item">
-          <a class="nav__link" href="#">Вязание на заказ</a>
+          <a class="nav__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="nav__options-menu">
@@ -42,11 +42,19 @@
       <div class="nav__delivery">Бесплатная доставка по России</div>
       <div class="page-header__wrapper">
         <div class="nav__search search">
-          <a href="#" class="nav__link search__link"><span class="search__link-text">Поиск по сайту</span></a>
+          <a href="#" class="nav__link search__link">
+            <svg class="search__icon" width="22" height="19">
+              <use xlink:href="img/sprite/svg-sprite.svg#icon-search"></use>
+            </svg>
+            <span class="search__link-text">Поиск по сайту</span></a>
         </div>
         <ul class="nav__user-nav user-nav">
           <li class="user-nav__item">
-            <a class="nav__link user-nav__link" href="#">Корзина: пока пуста</a>
+            <a class="nav__link user-nav__link" href="#">
+              <svg class="user-nav__icon" width="22" height="19">
+                <use xlink:href="img/sprite/svg-sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -63,14 +71,14 @@
       <h2 class="catalog-menu__title visually-hidden">Ассортимент товаров</h2>
       <ul class="catalog-menu__list">
         <li class="catalog-menu__item catalog-menu__item--interior">
-          <a href="#" class="catalog-menu__link">Предметы интерьера
+          <a href="#" class="catalog-menu__link">Предметы<br> интерьера
             <svg class="catalog-menu__icon catalog-menu__icon--interior" width="40" height="62" fill="#149080">
               <use xlink:href="img/sprite/svg-sprite.svg#icon-interior"></use>
             </svg>
           </a>
         </li>
         <li class="catalog-menu__item catalog-menu__item--toys">
-          <a href="#" class="catalog-menu__link">Детские игрушки
+          <a href="#" class="catalog-menu__link">Детские<br>игрушки
             <svg class="catalog-menu__icon catalog-menu__icon--toys" width="60" height="60" fill="#149080">
               <use xlink:href="img/sprite/svg-sprite.svg#icon-toy"></use>
             </svg>
@@ -198,12 +206,12 @@
             </li>
           </ul>
           <div class="reviews__toggles slider__toggles">
-            <button class="slider__prev">
+            <button class="slider__arrow slider__arrow--prev">
               <span class="visually-hidden">
                 Предыдущий
               </span>
             </button>
-            <button class="slider__next">
+            <button class="slider__arrow slider__arrow--next">
               <span class="visually-hidden">
                 Следующий
               </span>
@@ -223,7 +231,7 @@
             <tr>
               <td class="contacts__contact">e-mail:</td>
               <td class="contacts__value">
-                <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+                <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr>
@@ -253,7 +261,9 @@
   </main>
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <img width="103" src="./img/logo-footer.svg" alt="Логотип компании 'Мишка'" class="page-footer__logo" />
+      <svg width="103" height="40" class="page-footer__logo">
+        <use xlink:href="img/sprite/svg-sprite.svg#logo-footer"></use>
+      </svg></a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link social-link--instagram"><span class="visually-hidden">Инстаграм</span>
@@ -276,9 +286,10 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a href="#" class="copyright__link"><span class="visually-hidden">HTML Academy</span>
-          <svg width="27" height="35" fill="#63d1bb">
+
+        <a href="#" class="copyright__link"><b class="copyright__text">Разработано</b><span class="visually-hidden">HTML
+            Academy</span>
+          <svg width="27" height="35">
             <use xlink:href="img/sprite/svg-sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>

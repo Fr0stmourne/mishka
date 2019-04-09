@@ -58,12 +58,11 @@
 
   .catalog-menu__icon {
     top: 0;
-    right: -130px;
+    right: 0;
   }
 
   .catalog-menu__bg-zigzag {
     display: block;
-    fill: red;
     margin-top: -25px;
   }
 
@@ -76,15 +75,25 @@
     box-sizing: border-box;
     width: 334px;
     padding-left: 35px;
+    transition: 0.3s;
+    opacity: 1;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &:active .catalog-menu__link {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .catalog-menu__link {
     display: block;
     margin: 0;
-
-    width: 140px;
+    width: 100%;
     font-size: 20px;
     line-height: 30px;
+    transition: 0.2s;
   }
 }
 
@@ -95,13 +104,12 @@
 
   .catalog-menu__icon {
     top: 0;
-    right: -300px;
+    right: 0;
   }
 
 
   .catalog-menu__bg-zigzag {
     margin-top: -30px;
-    fill: red;
   }
 
 }

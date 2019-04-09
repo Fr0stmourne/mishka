@@ -4,6 +4,7 @@
 
 .page-footer__logo {
   display: none;
+
 }
 
 .page-footer__social {
@@ -18,7 +19,19 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: block;
-    margin-right: 0;
+    margin: auto 0;
+    fill: #000;
+    opacity: 1;
+    transition: 0.3s;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
   .page-footer__copyright {

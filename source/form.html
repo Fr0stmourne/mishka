@@ -7,23 +7,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mishka</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="page-header__nav nav container">
       <div class="nav__logo-container">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg" />
-          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" />
-          <img class="nav__logo" src="./img/logo-mobile.svg" alt="Логотип компании 'Мишка'" />
-        </picture>
-        <h1 class="visually-hidden nav__title">Mishka</h1>
+        <a href="index.html" class="nav__logo-link">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg" />
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" />
+            <img class="nav__logo" src="./img/logo-mobile.svg" alt="Логотип компании 'Мишка'" />
+          </picture>
+          <h1 class="visually-hidden nav__title">Mishka</h1>
+        </a>
       </div>
       <ul class="nav__menu menu">
         <li class="menu__item">
-          <a class="nav__link" href="#">Каталог товаров</a>
+          <a class="nav__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="menu__item">
           <a class="nav__link" href="#">Вязание на заказ</a>
@@ -40,18 +42,27 @@
       <div class="nav__delivery">Бесплатная доставка по России</div>
       <div class="page-header__wrapper">
         <div class="nav__search search">
-          <a href="#" class="nav__link search__link"><span class="search__link-text">Поиск по сайту</span></a>
+          <a href="#" class="nav__link search__link">
+            <svg class="search__icon" width="22" height="19">
+              <use xlink:href="img/sprite/svg-sprite.svg#icon-search"></use>
+            </svg>
+            <span class="search__link-text">Поиск по сайту</span></a>
         </div>
         <ul class="nav__user-nav user-nav">
           <li class="user-nav__item">
-            <a class="nav__link user-nav__link" href="#">Корзина: пока пуста</a>
+            <a class="nav__link user-nav__link" href="#">
+              <svg class="user-nav__icon" width="22" height="19">
+                <use xlink:href="img/sprite/svg-sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="intro">
+    <div class="intro intro--img">
       <h2 class="intro__title">
-        Вязание на заказ
+        Милые штуки ручной<br />
+        работы для дома
       </h2>
     </div>
   </header>
@@ -161,7 +172,9 @@
   </main>
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <img width="103" src="./img/logo-footer.svg" alt="Логотип компании 'Мишка'" class="page-footer__logo" />
+      <svg width="103" height="40" class="page-footer__logo">
+        <use xlink:href="img/sprite/svg-sprite.svg#logo-footer"></use>
+      </svg></a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link social-link--instagram"><span class="visually-hidden">Инстаграм</span>
@@ -184,9 +197,10 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a href="#" class="copyright__link"><span class="visually-hidden">HTML Academy</span>
-          <svg width="27" height="35" fill="#63d1bb">
+
+        <a href="#" class="copyright__link"><b class="copyright__text">Разработано</b><span class="visually-hidden">HTML
+            Academy</span>
+          <svg width="27" height="35">
             <use xlink:href="img/sprite/svg-sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>

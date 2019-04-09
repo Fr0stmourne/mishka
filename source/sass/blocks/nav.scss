@@ -5,6 +5,17 @@
   text-decoration: none;
   font-weight: 700;
   color: #000;
+
+  opacity: 1;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -26,6 +37,20 @@
   padding: 0;
   display: none;
 }
+
+.nav__logo {
+  opacity: 1;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 
 
 
@@ -58,6 +83,7 @@
   .nav__link {
     padding: 20px 0;
     text-align: left;
+
   }
 
   .nav__delivery {
@@ -82,7 +108,7 @@
   }
 
   .nav__link {
-    padding: auto;
+    padding: 25px 0 20px;
     text-align: left;
   }
 

@@ -1,20 +1,26 @@
 .search__link {
   position: relative;
 
-  &::before {
-    content: "";
+  svg {
     display: block;
     position: absolute;
     margin: auto 0;
     left: 15px;
-    opacity: 0.3;
     top: 0;
     bottom: 0;
-    width: 22px;
-    height: 19px;
-    background-color: transparent;
-    background-image: url(../../img/icon-search.svg);
-    background-repeat: no-repeat;
+    opacity: 0.2;
+    fill: black;
+    transition: 0.3s;
+  }
+
+  &:active svg {
+    fill: $cyan;
+    opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: $cyan;
+    opacity: 1;
   }
 }
 
@@ -31,21 +37,15 @@
     border-right: 1px solid $gray;
     height: 100%;
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 22px;
-      margin: auto;
-      left: 0;
+    svg {
+      margin: auto 0;
+      left: 30px;
       right: 0;
       top: 0;
       bottom: 0;
-      opacity: 0.3;
-      height: 19px;
-      background-color: transparent;
-      background-image: url(../../img/icon-search.svg);
-      background-repeat: no-repeat;
+      opacity: 0.2;
     }
   }
 }
+
+@media (min-width: $desktop-width) {}
