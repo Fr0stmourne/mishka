@@ -925,7 +925,7 @@ img {
   line-height: 18px;
   color: #444444; }
 
-.order-form__text-input::-ms-input-placeholder {
+.order-form__text-input:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444; }
@@ -940,7 +940,7 @@ img {
   line-height: 18px;
   color: #444444; }
 
-.order-form__phone-input::-ms-input-placeholder {
+.order-form__phone-input:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444; }
@@ -955,7 +955,7 @@ img {
   line-height: 18px;
   color: #444444; }
 
-.order-form__email-input::-ms-input-placeholder {
+.order-form__email-input:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444; }
@@ -1059,19 +1059,19 @@ img {
     background-color: #f1f1f1; }
   .order-form__text-input::-webkit-input-placeholder {
     font-size: 19px; }
-  .order-form__text-input::-ms-input-placeholder {
+  .order-form__text-input:-ms-input-placeholder {
     font-size: 19px; }
   .order-form__text-input::placeholder {
     font-size: 19px; }
   .order-form__phone-input::-webkit-input-placeholder {
     font-size: 19px; }
-  .order-form__phone-input::-ms-input-placeholder {
+  .order-form__phone-input:-ms-input-placeholder {
     font-size: 19px; }
   .order-form__phone-input::placeholder {
     font-size: 19px; }
   .order-form__email-input::-webkit-input-placeholder {
     font-size: 19px; }
-  .order-form__email-input::-ms-input-placeholder {
+  .order-form__email-input:-ms-input-placeholder {
     font-size: 19px; }
   .order-form__email-input::placeholder {
     font-size: 19px; }
