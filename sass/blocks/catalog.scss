@@ -67,9 +67,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: 80px;
+    margin-bottom: 5px;
+  }
+
   .catalog__item {
     display: flex;
     flex-direction: row;
+    margin-bottom: 55px;
   }
 
   .catalog__item-title {
@@ -107,6 +113,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 130px;
+  }
+
   .catalog__list {
     display: flex;
     margin-left: -51px;

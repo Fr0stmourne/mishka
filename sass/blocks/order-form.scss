@@ -138,6 +138,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-form {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
   .order-form__fieldset {
     position: relative;
     padding-left: 167px;
@@ -257,6 +262,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order-form {
+    padding-top: 130px;
+  }
+
   .order-form__wrapper {
     width: auto;
   }
