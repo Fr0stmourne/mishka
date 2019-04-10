@@ -59,10 +59,9 @@
         </ul>
       </div>
     </nav>
-    <div class="intro intro--img">
+    <div class="intro">
       <h2 class="intro__title">
-        Милые штуки ручной<br />
-        работы для дома
+        Вязание на заказ
       </h2>
     </div>
   </header>
@@ -149,10 +148,16 @@
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Тел</legend>
           <input type="tel" class="order-form__phone-input" placeholder="+7 XXX XX XX*">
+          <svg class="order-form__phone-icon" width="25" height="24">
+            <use xlink:href="img/sprite/svg-sprite.svg#icon-phone"></use>
+          </svg>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">E-mail</legend>
           <input type="email" class="order-form__email-input" placeholder="Ваш Email*">
+          <svg class="order-form__email-icon" width="32" height="26">
+            <use xlink:href="img/sprite/svg-sprite.svg#icon-mail"></use>
+          </svg>
         </fieldset>
       </div>
       <div class="order-form__wrapper">
@@ -172,9 +177,10 @@
   </main>
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <svg width="103" height="40" class="page-footer__logo">
-        <use xlink:href="img/sprite/svg-sprite.svg#logo-footer"></use>
-      </svg></a>
+      <a href="index.html" class="page-footer__logo-link">
+        <svg width="103" height="40" class="page-footer__logo">
+          <use xlink:href="img/sprite/svg-sprite.svg#logo-footer"></use>
+        </svg></a>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link social-link--instagram"><span class="visually-hidden">Инстаграм</span>

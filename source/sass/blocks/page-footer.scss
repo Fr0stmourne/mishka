@@ -16,6 +16,10 @@
   padding: 28px 0;
 }
 
+.page-footer__logo-link {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: block;
