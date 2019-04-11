@@ -13,7 +13,7 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
-var tinypng = require('gulp-tinypng-compress');
+var tinypng = require("gulp-tinypng-compress");
 
 
 
@@ -26,7 +26,7 @@ gulp.task("copy", function () {
     ], {
       base: "source"
     })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("."));
 });
 
 gulp.task("clean", function () {
@@ -41,14 +41,14 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("./css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("./css"));
 });
 
 gulp.task("images", function () {
-  return gulp.src(["!build/img/sprite/**/*", "!build/img/logo-footer.svg", "build/img/**/*.{png,jpg,svg}"])
+  return gulp.src(["!./img/sprite/**/*", "!./img/logo-footer.svg", "./img/**/*.{png,jpg,svg}"])
     .pipe(imagemin([
       imagemin.optipng({
         optimizationLevel: 3
@@ -58,7 +58,7 @@ gulp.task("images", function () {
       }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("./img"));
 });
 
 gulp.task("tinypng", function () {
@@ -68,18 +68,18 @@ gulp.task("tinypng", function () {
       sigFile: 'source/img/.tinypng-sigs',
       log: true
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('./img'));
 });
 
 
 gulp.task("sprite", function () {
-  return gulp.src("build/img/**/*.svg")
+  return gulp.src("./img/**/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("svg-sprite.svg"))
-    .pipe(gulp.dest("build/img/sprite"));
+    .pipe(gulp.dest("./img/sprite"));
 });
 
 gulp.task("build", function (fn) {
@@ -99,7 +99,7 @@ gulp.task("build", function (fn) {
 
 gulp.task("html:copy", function () {
   return gulp.src("source/*.html")
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("."));
 });
 
 gulp.task("html:update", ["html:copy"], function (done) {
@@ -109,7 +109,7 @@ gulp.task("html:update", ["html:copy"], function (done) {
 
 gulp.task("serve", function () {
   server.init({
-    server: "build/"
+    server: "./"
   });
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html:update"]);
