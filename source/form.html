@@ -22,8 +22,10 @@
           </picture>
           <h1 class="visually-hidden nav__title">Mishka</h1>
         </a>
+        <span class="nav__hamburger nav__hamburger--closed">
+        </span>
       </div>
-      <ul class="nav__menu menu">
+      <ul class="nav__menu menu mobile-menu">
         <li class="menu__item">
           <a class="nav__link" href="catalog.html">Каталог товаров</a>
         </li>
@@ -41,14 +43,14 @@
       </ul>
       <div class="nav__delivery">Бесплатная доставка по России</div>
       <div class="page-header__wrapper">
-        <div class="nav__search search">
+        <div class="nav__search search mobile-menu">
           <a href="#" class="nav__link search__link">
             <svg class="search__icon" width="22" height="19">
               <use xlink:href="img/sprite/svg-sprite.svg#icon-search"></use>
             </svg>
             <span class="search__link-text">Поиск по сайту</span></a>
         </div>
-        <ul class="nav__user-nav user-nav">
+        <ul class="nav__user-nav user-nav mobile-menu">
           <li class="user-nav__item">
             <a class="nav__link user-nav__link" href="#">
               <svg class="user-nav__icon" width="22" height="19">
@@ -217,6 +219,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

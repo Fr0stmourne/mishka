@@ -22,8 +22,10 @@
           </picture>
           <h1 class="visually-hidden nav__title">Mishka</h1>
         </a>
+        <span class="nav__hamburger nav__hamburger--closed">
+        </span>
       </div>
-      <ul class="nav__menu menu">
+      <ul class="nav__menu menu mobile-menu">
         <li class="menu__item">
           <a class="nav__link" href="#">Каталог товаров</a>
         </li>
@@ -41,14 +43,14 @@
       </ul>
       <div class="nav__delivery">Бесплатная доставка по России</div>
       <div class="page-header__wrapper">
-        <div class="nav__search search">
+        <div class="nav__search search mobile-menu">
           <a href="#" class="nav__link search__link">
             <svg class="search__icon" width="22" height="19">
               <use xlink:href="img/sprite/svg-sprite.svg#icon-search"></use>
             </svg>
             <span class="search__link-text">Поиск по сайту</span></a>
         </div>
-        <ul class="nav__user-nav user-nav">
+        <ul class="nav__user-nav user-nav mobile-menu">
           <li class="user-nav__item">
             <a class="nav__link user-nav__link" href="#">
               <svg class="user-nav__icon" width="22" height="19">
@@ -85,7 +87,8 @@
               <h3 class="catalog__item-title"><a href="#" class="catalog__link">Зайчик-попрыгайчик</a></h3>
               <p class="catalog__item-description">Рост 30 см, вес 200 г</p>
               <span class="catalog__item-price">1 200 руб.</span>
-              <button class="catalog__button buy-button"><svg class="catalog__button-icon" width="22" height="19">
+              <button class="catalog__button buy-button order-button"><svg class="catalog__button-icon" width="22"
+                  height="19">
                   <use xlink:href="img/sprite/svg-sprite.svg#icon-cart"></use>
                 </svg><span class="visually-hidden">Купить</span></button>
             </div>
@@ -108,7 +111,7 @@
                 Диаметр 15 см, высота 10 см
               </p>
               <span class="catalog__item-price">690 руб.</span>
-              <button class="catalog__button buy-button">
+              <button class="catalog__button buy-button order-button">
                 <svg class="catalog__button-icon" width="22" height="19">
                   <use xlink:href="img/sprite/svg-sprite.svg#icon-cart"></use>
                 </svg>
@@ -135,7 +138,7 @@
                 Диаметр 30 см, высота 30 см
               </p>
               <span class="catalog__item-price">1 500 руб.</span>
-              <button class="catalog__button buy-button">
+              <button class="catalog__button buy-button order-button">
                 <svg class="catalog__button-icon" width="22" height="19">
                   <use xlink:href="img/sprite/svg-sprite.svg#icon-cart"></use>
                 </svg>
@@ -219,6 +222,7 @@
     <button class="size-modal__button-send button button--green">Добавить</button>
     <button class="size-modal__button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

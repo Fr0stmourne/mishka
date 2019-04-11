@@ -30,6 +30,11 @@ img {
   display: block;
 }
 
+@media (max-width: $tablet-width) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .visually-hidden {
   border: 0;
