@@ -14,6 +14,8 @@ var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
 var tinypng = require("gulp-tinypng-compress");
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 
 
@@ -71,6 +73,13 @@ gulp.task("tinypng", function () {
     .pipe(gulp.dest('./img'));
 });
 
+gulp.task('compressJs', function () {
+  return pipeline(
+    gulp.src('source/**/*.js'),
+    uglify(),
+    gulp.dest('.')
+  );
+});
 
 gulp.task("sprite", function () {
   return gulp.src("./img/**/*.svg")
@@ -89,6 +98,7 @@ gulp.task("build", function (fn) {
     "style",
     "images",
     "tinypng",
+    "compressJs",
     "sprite",
     fn
   );
