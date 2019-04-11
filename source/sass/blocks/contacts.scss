@@ -167,10 +167,14 @@
 
     &::after {
       top: 190px;
-      right: 750px;
+      right: 870px;
       left: 0;
       margin: 0 auto;
     }
+  }
+
+  .contacts__container {
+    padding-left: 0;
   }
 
   .contacts__map {
@@ -199,6 +203,7 @@
 
   .contacts__button {
     position: relative;
-    right: 255px;
+    right: 320px;
+    width: 230px;
   }
 }

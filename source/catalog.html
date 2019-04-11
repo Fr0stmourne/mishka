@@ -207,15 +207,17 @@
     </div>
   </footer>
 
-  <section class="size-modal visually-hidden">
+  <div class="modal-overlay"></div>
+  <section class="size-modal">
     <b class="size-modal__title">Добавить в корзину</b>
     <p class="size-modal__text">Выберите размер:</p>
     <ul class="size-modal__sizes">
-      <li class="size-modal__size">S</li>
-      <li class="size-modal__size">L</li>
-      <li class="size-modal__size">M</li>
+      <li class="size-modal__size"><button class="size-modal__size-button">S</button> </li>
+      <li class="size-modal__size"><button class="size-modal__size-button">L</button></li>
+      <li class="size-modal__size"><button class="size-modal__size-button">M</button></li>
     </ul>
-    <button class="size-modal__button button button--green">Добавить</button>
+    <button class="size-modal__button-send button button--green">Добавить</button>
+    <button class="size-modal__button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
 
