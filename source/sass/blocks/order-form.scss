@@ -56,11 +56,130 @@
   text-transform: uppercase;
 }
 
+.order-form__checkbox {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.order-form__radio {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.order-form__radio~.order-form__label {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  min-height: 40px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #000;
+  }
+}
+
+.order-form__radio:focus~.order-form__label {
+  &:before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+
+.order-form__radio:hover~.order-form__label {
+  &:before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.order-form__radio:active~.order-form__label::before {
+  border: 2px solid #cacaca;
+}
+
+.order-form__radio:checked~.order-form__label {
+
+  &:before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA80lEQVQ4jaXTPyvFURzH8ZdLd/MEdCVdGe4jkIUoBhYegGI1uDKTjTJ4BhSTyeRvGcwmRUkpu5QMioRO/X71c+7g3J/3dPp2Pu/z7XvO6Vi4PhcxiDlMoA+fuMMR9vFU3N4VrTexjEok7cEY1rGE3VjQiUNMx+1EdGMH/VhTOGkjIVxkFTO5YCBru122UA2C+WgWqdQxGQSjJcI5I0FQaymnU6tk91yWjyC4/4fgIQhOWsrpHAfBHp5LhC9wFQQvWMR3G+E3NMMif4kHWMFXQvgVs7gpCgLbmPpjqJcYwlleiF/gKRoYxjh68Y7H7Dvf/tqNH1sCKPm5w1OkAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.order-form__checkbox~.order-form__label {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  min-height: 40px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #000;
+  }
+}
+
+
+.order-form__checkbox:focus~.order-form__label {
+  &:before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+
+.order-form__checkbox:hover~.order-form__label {
+  &:before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.order-form__checkbox:active~.order-form__label::before {
+  border: 2px solid #cacaca;
+}
+
+.order-form__checkbox:checked~.order-form__label {
+
+  &:before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='23px' height='16px' viewBox='0 0 32.666 22.742' enable-background='new 0 0 32.666 22.742' xml:space='preserve'%3E%3Cpolygon points='32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 '/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .order-form__label {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
 }
+
 
 
 .order-form__text-input {
@@ -261,6 +380,71 @@
     top: 30px;
   }
 
+  .order-form__fieldset--type .order-form__field {
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .order-form__fieldset--color {
+    padding-bottom: 0;
+    margin-bottom: -20px;
+  }
+
+  .order-form__radio~.order-form__label {
+    padding-left: 80px;
+    padding-right: 200px;
+    position: relative;
+
+    &:before {
+      width: 52px;
+      height: 52px;
+
+      &:hover,
+      &:focus {
+        border-color: #62d1ba;
+      }
+
+      &:active {
+        border-color: #cacaca;
+      }
+    }
+
+  }
+
+  .order-form__radio:checked~.order-form__label {
+
+    &:before {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABZ0lEQVQ4jbXVv0uVURzH8ZdpQYP0w1BwECIXaaihkGjQTQcd/QeEBgUnG/sL2sQgaqiGxgaFprZwM4q8lxZFBA0NcgubhOTLPRdu99zncrs+veFZnvM97+f7feB8Ts/81gdtuIhx3MEQTnGITVTxJ9uR6Mve1LiKZSzierZaYxdP8Sp98C8uZOVMYwdP2kiDW3iBr2mituJHeI8bmaaY29jARJF4Cs/RW6goph/rGG0WD+Btl9I6V/AGPY3ix/84fhEPMVMXR5fzBYXdsFAX38NgieJJXArx3WzpfFzGSIivlSwOhlsdkFII8cF/8H4P8afs9fk4xl6It/GtRPFapF79H69ky90RMbqq4eS9xucSxC9RaRRHns7hZ1baOdWU4TSl217K4sMupJWUjietxMEX3E+Z3Akx6TM8wFHjhlYHJDqeTWf+HX61qPmRbo8xLOF3c0HRnRd8TE/U3ExBFR1GZ/ttx8EZGGI6WtXxeqoAAAAASUVORK5CYII=);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .order-form__checkbox~.order-form__label {
+
+    padding-left: 80px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:before {
+      left: 0;
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .order-form__checkbox:checked~.order-form__label {
+
+    &:before {
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='32.666px' height='22.742px' viewBox='0 0 32.666 22.742' enable-background='new 0 0 32.666 22.742' xml:space='preserve'%3E%3Cpolygon points='32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 '/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   .order-form__description {
     font-size: 17px;
     line-height: 30px;
@@ -274,21 +458,18 @@
   }
 
   .order-form__text-input {
-
+    font-size: 19px;
     padding: 20px 10px;
-
   }
 
   .order-form__phone-input {
-
+    font-size: 19px;
     padding: 20px 10px;
-
   }
 
   .order-form__email-input {
-
+    font-size: 19px;
     padding: 20px 10px;
-
   }
 
   .order-form__label {
@@ -313,6 +494,16 @@
 
   .order-form__email-input::placeholder {
     font-size: 19px;
+  }
+
+  .order-form__add-info::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .order-form__add-info {
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .order-form__wrapper--gray {
@@ -377,10 +568,16 @@
 
   .order-form__wrapper {
     width: auto;
+    padding-left: 135px;
+  }
+
+  .order-form__description {
+    margin-left: 185px;
   }
 
   .order-form__fieldset {
     max-width: 883px;
+    padding-left: 110px;
   }
 
   .order-form__button {
