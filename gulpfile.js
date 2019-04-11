@@ -13,6 +13,9 @@ var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
+var tinypng = require('gulp-tinypng-compress');
+
+
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -58,6 +61,17 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("tinypng", function () {
+  gulp.src('source/img/**/*.{png,jpg,jpeg}')
+    .pipe(tinypng({
+      key: 'RsCZev1geyFwOKznstLNGmxugsTZZmG6',
+      sigFile: 'source/img/.tinypng-sigs',
+      log: true
+    }))
+    .pipe(gulp.dest('build/img'));
+});
+
+
 gulp.task("sprite", function () {
   return gulp.src("build/img/**/*.svg")
     .pipe(svgmin())
@@ -74,6 +88,7 @@ gulp.task("build", function (fn) {
     "copy",
     "style",
     "images",
+    "tinypng",
     "sprite",
     fn
   );
