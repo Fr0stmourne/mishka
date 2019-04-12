@@ -85,6 +85,10 @@
 .contacts__button {
   display: block;
   width: 260px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
   margin: 0 auto;
 }
 

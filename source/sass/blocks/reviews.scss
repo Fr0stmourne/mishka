@@ -47,6 +47,11 @@
 
 .reviews__button {
   font-size: 18px;
+  display: block;
+  text-align: center;
+  width: auto;
+  color: #000;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,6 +72,9 @@
     right: 0;
     top: 25px;
     font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
   }
 
   .reviews__review {

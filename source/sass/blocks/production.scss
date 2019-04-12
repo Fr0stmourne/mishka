@@ -84,8 +84,11 @@
 
 .production__button {
   line-height: 16px;
-  margin: 0 35px 35px;
+  margin: 0 30px 35px;
   padding: 20px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
   width: auto;
 }
 
@@ -112,6 +115,7 @@
     line-height: 30px;
     padding: 0 43px;
     margin: 0;
+    margin-bottom: 35px;
   }
 
   .production__button {
@@ -153,6 +157,7 @@
   }
 
   .production__button {
+    box-sizing: border-box;
     width: 230px;
     margin: 0 60px 20px;
     margin-left: auto;
