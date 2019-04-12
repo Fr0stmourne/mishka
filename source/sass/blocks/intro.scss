@@ -15,7 +15,7 @@
 
 
 
-@media (min-resolution: 4dppx) {
+@media (min-resolution: 2dppx) {
   .intro--img {
     background-image: url(../../img/hero-mobile@2x.jpg);
   }
@@ -53,7 +53,7 @@
 
 
 
-  @media (min-resolution: 4dppx) {
+  @media (min-resolution: 2dppx) {
     .intro--img {
       background-image: url(../../img/hero-tablet@2x.jpg)
     }
@@ -69,7 +69,6 @@
 
   .intro--img::after {
     margin-top: -25px;
-    position: block;
     z-index: 10;
     bottom: 0;
     content: "";
@@ -86,7 +85,7 @@
     line-height: 57px;
   }
 
-  @media (min-resolution: 4dppx) {
+  @media (min-resolution: 2dppx) {
     .intro--img {
       background-image: url(../../img/hero-desktop@2x.jpg)
     }
