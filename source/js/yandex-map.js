@@ -1,3 +1,10 @@
+var staticMap = document.querySelector(".contacts__map-container");
+var interactiveMap = document.querySelector(".contacts__interactive-map");
+
+staticMap.classList.add("contacts__map--hide");
+interactiveMap.classList.remove("contacts__interactive-map--hide");
+
+
 ymaps.ready(function () {
   var myMap = new ymaps.Map("interactive-map", {
       center: [59.93874335, 30.32310386],
