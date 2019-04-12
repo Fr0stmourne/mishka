@@ -5,6 +5,11 @@ var sizeModalClose = document.querySelector(".size-modal__button-close");
 var hamburger = document.querySelector(".nav__hamburger");
 var mobileMenuItems = document.querySelectorAll(".mobile-menu");
 
+hamburger.classList.remove("nav__hamburger--opened");
+for (var i = 0; i < mobileMenuItems.length; i++) {
+  mobileMenuItems[i].classList.remove("mobile-menu--opened");
+}
+
 for (var i = 0; i < orderBtns.length; i++) {
   orderBtns[i].addEventListener("click", function (event) {
     event.preventDefault();
@@ -27,6 +32,6 @@ hamburger.addEventListener("click", function (event) {
   event.preventDefault();
   hamburger.classList.toggle("nav__hamburger--opened");
   for (var i = 0; i < mobileMenuItems.length; i++) {
-    mobileMenuItems[i].classList.toggle("mobile-menu");
+    mobileMenuItems[i].classList.toggle("mobile-menu--opened");
   }
 })

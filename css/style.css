@@ -37,9 +37,11 @@ img {
 .modal-overlay--show {
   display: block; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mobile-menu {
-    display: none; } }
+    display: none; }
+  .mobile-menu--opened {
+    display: block; } }
 
 .visually-hidden {
   border: 0;
