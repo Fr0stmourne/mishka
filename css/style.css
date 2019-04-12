@@ -217,7 +217,7 @@ img {
           box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
-  padding-right: 115px;
+  padding: 35px 115px 40px 0;
   color: #fff;
   font-weight: 700;
   font-size: 19px;
@@ -233,7 +233,7 @@ img {
   display: none; }
 
 .catalog-menu__item {
-  padding: 35px 30px 40px; }
+  padding: 0; }
 
 .catalog-menu__item--interior {
   background-color: #63d1bb; }
@@ -244,7 +244,9 @@ img {
 .catalog-menu__icon {
   position: absolute;
   opacity: 0.5;
+  margin: auto 0;
   top: 0;
+  bottom: 0;
   right: 0; }
 
 .catalog-menu__icon--interior {
@@ -256,8 +258,7 @@ img {
   .catalog-menu__list {
     position: relative; }
   .catalog-menu__icon {
-    top: 0;
-    right: 0; }
+    right: 30px; }
   .catalog-menu__bg-zigzag {
     display: block;
     margin-top: -25px; }
@@ -272,7 +273,6 @@ img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 334px;
-    padding-left: 35px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     opacity: 1; }
@@ -287,15 +287,13 @@ img {
     width: 100%;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 35px;
     -webkit-transition: 0.2s;
     transition: 0.2s; } }
 
 @media (min-width: 1150px) {
   .catalog-menu__item {
     width: 525px; }
-  .catalog-menu__icon {
-    top: 0;
-    right: 0; }
   .catalog-menu__bg-zigzag {
     margin-top: -30px; } }
 

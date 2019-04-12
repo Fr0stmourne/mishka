@@ -4,7 +4,7 @@
   box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
-  padding-right: 115px;
+  padding: 35px 115px 40px 0;
   color: #fff;
   font-weight: 700;
   font-size: 19px;
@@ -24,7 +24,7 @@
 }
 
 .catalog-menu__item {
-  padding: 35px 30px 40px;
+  padding: 0;
 }
 
 .catalog-menu__item--interior {
@@ -38,7 +38,9 @@
 .catalog-menu__icon {
   position: absolute;
   opacity: 0.5;
+  margin: auto 0;
   top: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -57,8 +59,7 @@
 
 
   .catalog-menu__icon {
-    top: 0;
-    right: 0;
+    right: 30px;
   }
 
   .catalog-menu__bg-zigzag {
@@ -74,7 +75,6 @@
   .catalog-menu__item {
     box-sizing: border-box;
     width: 334px;
-    padding-left: 35px;
     transition: 0.3s;
     opacity: 1;
 
@@ -93,6 +93,7 @@
     width: 100%;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 35px;
     transition: 0.2s;
   }
 }
@@ -102,10 +103,6 @@
     width: 525px;
   }
 
-  .catalog-menu__icon {
-    top: 0;
-    right: 0;
-  }
 
 
   .catalog-menu__bg-zigzag {
