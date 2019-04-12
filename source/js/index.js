@@ -4,6 +4,13 @@ var sizeModal = document.querySelector(".size-modal");
 var sizeModalClose = document.querySelector(".size-modal__button-close");
 var hamburger = document.querySelector(".nav__hamburger");
 var mobileMenuItems = document.querySelectorAll(".mobile-menu");
+var staticMap = document.querySelector(".contacts__map-container");
+var interactiveMap = document.querySelector(".contacts__interactive-map");
+
+staticMap.classList.add("contacts__map--hide");
+interactiveMap.classList.remove("contacts__interactive-map--hide");
+
+
 
 hamburger.classList.remove("nav__hamburger--opened");
 for (var i = 0; i < mobileMenuItems.length; i++) {
