@@ -3,13 +3,13 @@
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .social__link {
   text-decoration: none;
   color: #000;
-  margin-top: auto;
 
 
   svg {
@@ -38,4 +38,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .social {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    border-bottom: 0;
+  }
+}

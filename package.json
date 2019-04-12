@@ -47,5 +47,8 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "svg4everybody": "^2.1.9"
   }
 }

@@ -89,11 +89,13 @@
   align-items: center;
   padding-left: 50px;
   min-height: 40px;
+  padding-top: 3px;
   position: relative;
 
   &:before {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
     width: 40px;
     height: 40px;
@@ -133,6 +135,7 @@
   display: flex;
   align-items: center;
   padding-left: 50px;
+  padding-top: 3px;
   min-height: 40px;
   position: relative;
 
@@ -140,6 +143,7 @@
     content: "";
     position: absolute;
     left: 0;
+    top: 0;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -395,6 +399,7 @@
 
   .order-form__radio~.order-form__label {
     padding-left: 80px;
+    padding-top: 7px;
     padding-right: 200px;
     position: relative;
 
@@ -426,6 +431,7 @@
   .order-form__checkbox~.order-form__label {
 
     padding-left: 80px;
+    padding-top: 7px;
     position: relative;
     margin-bottom: 20px;
 
@@ -543,10 +549,10 @@
   .order-form__button {
     padding-left: 30px;
     padding-right: 30px;
-    width: 230px;
+    width: 235px;
     margin: 0 auto;
     position: relative;
-    right: 210px;
+    right: 205px;
   }
 
   .order-form__disclaimer {
@@ -576,12 +582,12 @@
   }
 
   .order-form__fieldset {
-    max-width: 883px;
+    max-width: 860px;
     padding-left: 110px;
   }
 
   .order-form__button {
-    right: 242px;
+    right: 215px;
   }
 
   .order-form__disclaimer {

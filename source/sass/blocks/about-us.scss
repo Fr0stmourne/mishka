@@ -89,8 +89,9 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    width: 700px;
-    padding: 70px 175px 0;
+    box-sizing: border-box;
+    width: 1050px;
+    padding: 70px 175px 0 120px;
 
     &::before {
       content: "";

@@ -50,18 +50,19 @@ gulp.task("style", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src(["!./img/sprite/**/*", "!./img/logo-footer.svg", "./img/**/*.{png,jpg,svg}"])
+  return gulp.src(["./img/**/*.{png,jpg,jpeg}"])
     .pipe(imagemin([
       imagemin.optipng({
         optimizationLevel: 3
       }),
       imagemin.jpegtran({
         progressive: true
-      }),
-      imagemin.svgo()
+      })
     ]))
     .pipe(gulp.dest("./img"));
 });
+
+
 
 gulp.task("tinypng", function () {
   gulp.src('source/img/**/*.{png,jpg,jpeg}')
@@ -81,9 +82,23 @@ gulp.task('compressJs', function () {
   );
 });
 
+gulp.task("compressSvg", function () {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(svgmin({
+      plugins: [{
+        removeViewBox: false
+      }]
+    }))
+    .pipe(gulp.dest('./img'));
+});
+
 gulp.task("sprite", function () {
   return gulp.src("./img/**/*.svg")
-    .pipe(svgmin())
+    .pipe(svgmin({
+      plugins: [{
+        removeViewBox: false
+      }]
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -98,6 +113,7 @@ gulp.task("build", function (fn) {
     "style",
     "images",
     "tinypng",
+    "compressSvg",
     "compressJs",
     "sprite",
     fn

@@ -13,8 +13,6 @@
 </head>
 
 <body>
-
-  </svg>
   <header class="page-header">
     <nav class="page-header__nav nav container">
       <div class="nav__logo-container">
@@ -250,7 +248,7 @@
         </table>
       </div>
       <div class="contacts__map-container">
-        <svg class="contacts__map-pin" width="40" height="62" fill="#149080">
+        <svg class="contacts__map-pin" width="66" height="100" fill="#149080">
           <use xlink:href="img/sprite/svg-sprite.svg#icon-map-pin"></use>
         </svg>
         <picture>
@@ -267,7 +265,7 @@
     <div class="container page-footer__wrapper">
       <svg width="103" height="40" class="page-footer__logo">
         <use xlink:href="img/sprite/svg-sprite.svg#logo-footer"></use>
-      </svg></a>
+      </svg>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a href="#" class="social__link social-link--instagram"><span class="visually-hidden">Инстаграм</span>
@@ -312,6 +310,12 @@
     <button class="size-modal__button-send button button--green">Добавить</button>
     <button class="size-modal__button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+
+  </script>
   <script src="js/index.js"></script>
 </body>
 
