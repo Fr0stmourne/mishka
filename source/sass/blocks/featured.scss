@@ -1,5 +1,5 @@
 .featured {
-  margin: 32px 0;
+  margin: 25px 0 30px;
 }
 
 .featured__title {
@@ -7,7 +7,7 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .featured__item-info {
@@ -27,14 +27,14 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .featured__description {
   font-size: 15px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .featured__details {
@@ -50,7 +50,7 @@
 }
 
 .featured__photo {
-  margin-bottom: 26px;
+  margin-bottom: 17px;
   width: 260px;
   height: 315px;
 }
@@ -59,6 +59,7 @@
   font-size: 15px;
   border-bottom: 1px solid $gray;
   line-height: 20px;
+  padding-left: 20px;
 }
 
 .featured__price {

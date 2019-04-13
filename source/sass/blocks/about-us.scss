@@ -1,6 +1,6 @@
 .about-us {
   position: relative;
-  padding: 32px 0 0;
+  padding: 37px 0 0;
   margin: 0 auto;
   margin-bottom: 32px;
 
@@ -22,7 +22,7 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .about-us__advantages {
@@ -39,13 +39,37 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  padding-top: 57px;
+  padding-top: 70px;
+  margin-bottom: 13px;
 }
 
 .about-us__icon {
   position: absolute;
-  top: 10px;
+  top: 17px;
+  left: 7px;
+}
 
+.about-us__icon--money {
+  left: 0;
+}
+
+.about-us__icon--heart {
+  top: 21px;
+}
+
+.about-us__icon--ball {
+  left: 3px;
+  top: 19px;
+}
+
+.about-us__icon--rocket {
+  left: -8px;
+  top: 19px;
+}
+
+.about-us__icon--gift {
+  left: 2px;
+  top: 18px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,14 +1,14 @@
 .slider__toggles {
   display: flex;
   outline: 1px solid $gray;
-  margin-bottom: 40px;
+
   width: 100%;
 }
 
 .slider__arrow {
   display: block;
   width: 50%;
-  height: 70px;
+  height: 52px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -42,5 +42,9 @@
     outline: none;
     margin-bottom: 0;
     width: 167px;
+  }
+
+  .slider__arrow {
+    height: 70px;
   }
 }
