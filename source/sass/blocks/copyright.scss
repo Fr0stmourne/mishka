@@ -1,7 +1,5 @@
 .copyright {
-
   text-align: center;
-
 }
 
 .copyright__text {
@@ -34,5 +32,23 @@
   &:active {
     opacity: 0.3;
     fill: #46c1ae;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    right: 10px;
+    bottom: 5px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    svg {
+      position: relative;
+      left: 10px;
+      top: 13px;
+    }
   }
 }

@@ -81,7 +81,8 @@
 
 @media (min-width: $tablet-width) {
   .featured {
-
+    position: relative;
+    margin: 43px 0 50px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -91,9 +92,13 @@
     width: 500px;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 50px;
   }
 
   .featured__item-type {
+    position: absolute;
+    right: 0px;
+    top: 10px;
     width: 125px;
     text-align: center;
     line-height: 17px;
@@ -110,10 +115,11 @@
   .featured__description {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 35px;
   }
 
   .featured__details {
-    margin-bottom: 57px;
+    margin-bottom: 53px;
   }
 
   .featured__feature {
@@ -121,55 +127,77 @@
     margin: 0;
   }
 
+  .featured__value {
+    padding-left: 5px;
+  }
+
 
   .featured__photo {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 7px;
     width: 334px;
     height: auto;
+  }
+
+  .featured__price {
+    font-size: 20px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .featured {
     position: relative;
-    padding-left: 175px;
-    padding-top: 130px;
-    padding-bottom: 75px;
-
+    padding-left: 170px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    margin-top: 0;
 
   }
 
   .featured__item-type {
     position: absolute;
-    left: 0;
-    top: 130px;
+    left: 20px;
+    top: 135px;
   }
 
   .featured__title {
     width: auto;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .featured__description {
-    margin-bottom: 60px;
+    margin-left: 5px;
+    margin-bottom: 45px;
+  }
+
+  .featured__value {
+    padding-left: 12px;
   }
 
   .featured__details {
-    margin-bottom: 125px;
+    margin-bottom: 109px;
   }
 
   .featured__price {
     font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+  }
+
+  .featured__button {
+    position: relative;
+    left: 5px;
+    bottom: 5px;
   }
 
   .featured__photo {
     width: 525px;
     height: auto;
-    top: -135px;
+    top: -165px;
     right: -210px;
     z-index: -1;
   }

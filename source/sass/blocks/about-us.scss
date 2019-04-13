@@ -75,8 +75,8 @@
 @media (min-width: $tablet-width) {
 
   .about-us {
-    padding-top: 70px;
-    margin-bottom: 70px;
+    padding-top: 65px;
+    margin-bottom: 40px;
 
     &::before {
       content: "";
@@ -94,7 +94,8 @@
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 0;
+    margin-bottom: 33px;
+    margin-left: -5px;
   }
 
   .about-us__advantages {
@@ -107,7 +108,11 @@
     width: 330px;
     font-size: 20px;
     line-height: 22px;
-    margin-top: 40px;
+    margin-bottom: 41px;
+  }
+
+  .about-us__icon--rocket {
+    left: 0;
   }
 }
 
@@ -115,7 +120,8 @@
   .about-us {
     box-sizing: border-box;
     width: 1050px;
-    padding: 70px 175px 0 120px;
+    padding: 37px 175px 0 123px;
+    margin-bottom: 50px;
 
     &::before {
       content: "";

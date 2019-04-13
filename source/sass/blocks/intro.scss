@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    margin-top: -68px;
+    margin-top: -63px;
     padding: 115px 30px 0;
     padding-bottom: 20px;
     text-align: center;
@@ -41,6 +41,7 @@
   .intro__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 75px;
   }
 
   .intro--img {
@@ -62,9 +63,14 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .intro {
+    margin-top: -63px;
+  }
+
   .intro--img {
     background-image: url(../img/hero-desktop@1x.jpg);
-    background-position: center 15px;
+    background-position: center 5px;
     min-height: 670px;
     background-size: 1145px auto;
   }

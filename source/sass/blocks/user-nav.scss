@@ -8,7 +8,7 @@
 .user-nav__link {
   position: relative;
 
-  svg {
+  .user-nav__icon {
     position: absolute;
     margin: auto 0;
     left: 15px;
@@ -19,12 +19,12 @@
     transition: 0.3s;
   }
 
-  &:hover svg {
+  &:hover .user-nav__icon {
     fill: $cyan;
     opacity: 1;
   }
 
-  &:active svg {
+  &:active .user-nav__icon {
     fill: $cyan;
     opacity: 0.3;
   }
@@ -50,21 +50,29 @@
     text-align: right;
     box-sizing: border-box;
     height: 100%;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-left: 50px;
 
-    svg {
+    .user-nav__icon {
       margin: auto 0;
       left: 30px;
       opacity: 0.3;
-      top: 0;
+      top: -10px;
       bottom: 0;
     }
   }
+
+
 }
 
 @media (min-width: $desktop-width) {
   .user-nav__link {
-    padding: 25px 0 20px;
+    padding: 31px 0 20px;
+
+    .user-nav__icon {
+      top: 2px;
+      left: 25px;
+    }
   }
+
 }

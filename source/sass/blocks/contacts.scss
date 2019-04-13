@@ -86,7 +86,7 @@
 .contacts__map-container {
   height: 458px;
   width: 320px;
-  margin: 0 auto 42px;
+  margin: 0 auto 37px;
   position: relative;
 }
 
@@ -114,7 +114,7 @@
 @media (min-width: $tablet-width) {
 
   .contacts {
-    padding: 70px 0;
+    padding: 70px 0 53px;
 
     &::before {
       content: "";
@@ -131,7 +131,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 50px;
+      top: 57px;
       left: 630px;
       right: 0;
       margin: 0 auto;
@@ -143,6 +143,10 @@
 
   }
 
+  .contacts__table {
+    margin-bottom: 30px;
+  }
+
   .contacts__table-body {
     display: flex;
   }
@@ -150,20 +154,34 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
+    margin: 2px 0 47px -5px;
+
   }
 
   .contacts__value {
     width: 230px;
-    padding-right: 50px;
+    padding-right: 26px;
+    padding-left: 20px;
     font-size: 17px;
   }
 
   .contacts__contact {
     font-size: 17px;
+    width: auto;
+  }
+
+  .contacts__interactive-map {
+    margin-bottom: 55px;
   }
 
   .contacts__map-container {
     width: 768px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__button {
+    width: 230px;
+    padding: 15px 20px;
   }
 
 }
@@ -177,8 +195,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 200px;
+    padding-top: 165px;
     padding-left: 175px;
+    margin-bottom: 70px;
 
     &::before {
       content: "";
@@ -194,11 +213,17 @@
     }
 
     &::after {
-      top: 190px;
-      right: 870px;
+      top: 155px;
+      right: 865px;
       left: 0;
       margin: 0 auto;
     }
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+
   }
 
   .contacts__container {
@@ -210,7 +235,7 @@
     width: 525px;
     height: 458px;
     right: 0;
-    top: 65px;
+    top: 95px;
   }
 
   .contacts__map-container {
@@ -218,7 +243,7 @@
     width: 525px;
     position: absolute;
     right: 0;
-    top: 65px;
+    top: 95px;
   }
 
 
@@ -227,9 +252,6 @@
     top: 150px;
   }
 
-
-
-
   .contacts__table-body {
     width: 350px;
     flex-direction: column;
@@ -237,7 +259,8 @@
 
   .contacts__button {
     position: relative;
-    right: 317px;
+    right: 322px;
+    top: 20px;
     width: 235px;
   }
 }

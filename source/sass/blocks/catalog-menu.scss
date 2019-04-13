@@ -94,16 +94,20 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 35px;
+    padding-bottom: 35px;
     transition: 0.2s;
   }
 }
 
 @media (min-width: $desktop-width) {
+
+  .catalog-menu {
+    margin-top: -148px;
+  }
+
   .catalog-menu__item {
     width: 525px;
   }
-
-
 
   .catalog-menu__bg-zigzag {
     margin-top: -30px;

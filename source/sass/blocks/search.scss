@@ -1,7 +1,7 @@
 .search__link {
   position: relative;
 
-  svg {
+  .search__icon {
     display: block;
     position: absolute;
     margin: auto 0;
@@ -13,12 +13,12 @@
     transition: 0.3s;
   }
 
-  &:active svg {
+  &:active .search__icon {
     fill: $cyan;
     opacity: 0.3;
   }
 
-  &:hover svg {
+  &:hover .search__icon {
     fill: $cyan;
     opacity: 1;
   }
@@ -37,15 +37,22 @@
     border-right: 1px solid $gray;
     height: 100%;
 
-    svg {
+    .search__icon {
       margin: auto 0;
       left: 30px;
       right: 0;
-      top: 0;
+      top: -5px;
       bottom: 0;
       opacity: 0.2;
     }
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .search__link {
+
+    .search__icon {
+      top: 2px;
+    }
+  }
+}
