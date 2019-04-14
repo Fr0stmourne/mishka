@@ -21,15 +21,15 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  padding: 0 28px 0 80px;
-  margin: 30px 0;
+  padding: 0 28px 0 90px;
+  margin: 25px 0;
 }
 
 .production__title::before {
   content: '';
   position: absolute;
   display: block;
-  left: 25px;
+  left: 30px;
   top: 5px;
   width: 35px;
   height: 35px;
@@ -39,8 +39,8 @@
 .production__description {
   font-size: 13px;
   line-height: 24px;
-  margin: 30px 0;
-  padding: 0 28px;
+  margin: 27px 0;
+  padding: 0 38px 0 32px;
 }
 
 .production__video {
@@ -85,7 +85,7 @@
 .production__button {
   line-height: 16px;
   margin: 0 30px 35px;
-  padding: 20px 15px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   color: #000;
@@ -93,19 +93,24 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .production {
+    margin-bottom: 60px;
+  }
+
   .production__video {
     order: -1;
   }
 
   .production__title {
     font-size: 20px;
-    margin: 40px 43px;
+    margin: 40px 38px 32px;
     padding-left: 65px;
   }
 
   .production__title::before {
-    left: 15px;
-    top: -5px;
+    left: 1px;
+    top: -4px;
 
   }
 
@@ -113,21 +118,21 @@
   .production__description {
     font-size: 15px;
     line-height: 30px;
-    padding: 0 43px;
+    padding: 0 38px;
     margin: 0;
     margin-bottom: 35px;
   }
 
   .production__button {
-    padding: 20px;
-    margin: 0 43px 35px;
+    padding: 17px;
+    margin: 0 40px 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production {
     min-height: 455px;
-    margin: 0 0 105px;
+    margin: 0 0 100px;
   }
 
   .production__video {
@@ -137,21 +142,21 @@
   }
 
   .production__title {
-    margin: 45px 60px 40px auto;
-    padding: 50px 0 0 0;
+    margin: 45px 60px 32px auto;
+    padding: 47px 0 0 0;
     width: 230px;
   }
 
   .production__title::before {
-    left: 0;
-    top: 0;
+    left: 5px;
+    top: -6px;
 
   }
 
 
   .production__description {
     width: 230px;
-    margin: 0 60px 50px;
+    margin: 0 60px 47px;
     margin-left: auto;
     padding: 0;
   }
@@ -159,7 +164,6 @@
   .production__button {
     box-sizing: border-box;
     width: 230px;
-    margin: 0 60px 20px;
-    margin-left: auto;
+    margin: 0 55px 20px auto;
   }
 }
