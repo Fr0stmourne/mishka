@@ -1501,7 +1501,7 @@ img {
   .order-form__legend {
     position: absolute;
     left: -20px;
-    top: 37px; }
+    top: 30px; }
   .order-form__fieldset--type .order-form__field {
     margin-bottom: 25px; }
     .order-form__fieldset--type .order-form__field:last-of-type {
@@ -1657,7 +1657,8 @@ img {
     max-width: 860px;
     padding-left: 80px; }
   .order-form__legend {
-    left: -40px; }
+    left: -40px;
+    top: 30px; }
   .order-form__fieldset--color .order-form__field {
     margin-right: 35px; }
   .order-form__field--name {
