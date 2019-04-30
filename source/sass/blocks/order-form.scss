@@ -564,6 +564,12 @@
 
   .order-form__fieldset--name {
     padding-top: 10px;
+    max-width: 500px;
+    padding-left: 170px;
+
+    .order-form__legend {
+      left: 0;
+    }
   }
 
 
@@ -611,6 +617,13 @@
     left: -40px;
     top: 30px;
 
+  }
+
+  .order-form__fieldset--name {
+
+    .order-form__legend {
+      left: -40px;
+    }
   }
 
   .order-form__fieldset--color .order-form__field {

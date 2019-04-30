@@ -1627,7 +1627,11 @@ img {
     .order-form__fieldset--color .order-form__field {
       width: 228px; }
   .order-form__fieldset--name {
-    padding-top: 10px; }
+    padding-top: 10px;
+    max-width: 500px;
+    padding-left: 170px; }
+    .order-form__fieldset--name .order-form__legend {
+      left: 0; }
   .order-form__button {
     padding-left: 30px;
     padding-right: 30px;
@@ -1659,6 +1663,8 @@ img {
   .order-form__legend {
     left: -40px;
     top: 30px; }
+  .order-form__fieldset--name .order-form__legend {
+    left: -40px; }
   .order-form__fieldset--color .order-form__field {
     margin-right: 35px; }
   .order-form__field--name {
