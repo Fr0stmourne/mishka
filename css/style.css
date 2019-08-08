@@ -901,7 +901,7 @@ img {
   .featured__photo {
     width: 525px;
     height: auto;
-    top: -165px;
+    top: -156px;
     right: -210px;
     z-index: -1; } }
 
@@ -2004,7 +2004,7 @@ img {
 
 @media (min-width: 1150px) {
   .reviews__button {
-    top: 80px; }
+    top: 72px; }
   .reviews__review {
     padding-right: 90px; }
   .reviews__title {
